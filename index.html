@@ -65,18 +65,20 @@
 
     <section id="about" class="py-20 odd">
       <div class="text-center">
-        <h1 class="header serif-font text-center font-bold text-[4vmin]">
+        <h1
+          class="header text-[#363635] serif-font text-center font-bold text-[4vmin]"
+        >
           ABOUT
         </h1>
         <div
-          class="flex bg-[#363635] rounded-full mx-auto w-[6.5vw] h-[0.5vh]"
+          class="flex bg-[#363635] rounded-full mx-auto lg:w-[13vh] md:w-[13vh] sm:w-[13vmin] h-[0.5vh]"
         ></div>
       </div>
       <div class="container mx-auto py-10">
         <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
           <div>
             <img
-              class="mx-auto pt-8 h-[15vmax]"
+              class="mx-auto pt-8 lg:h-[15vmax] md:h-[15vmax] sm:h-[40vmin]"
               src="./images/icons/coding.png"
               alt="coding"
             />
@@ -95,7 +97,7 @@
           </div>
           <div>
             <img
-              class="mx-auto pt-8 h-[15vmax]"
+              class="mx-auto pt-8 lg:h-[15vmax] md:h-[15vmax] sm:h-[40vmin]"
               src="./images/icons/web-development.png"
               alt="tech"
             />
@@ -114,7 +116,7 @@
           </div>
           <div>
             <img
-              class="mx-auto pt-8 h-[15vmax]"
+              class="mx-auto pt-8 lg:h-[15vmax] md:h-[15vmax] sm:h-[40vmin]"
               src="./images/icons/design.png"
               alt=" "
             />
@@ -133,7 +135,7 @@
           </div>
           <div>
             <img
-              class="mx-auto pt-8 h-[15vmax]"
+              class="mx-auto pt-8 lg:h-[15vmax] md:h-[15vmax] sm:h-[40vmin]"
               src="./images/icons/iot-cloud.png"
               alt=" "
             />
@@ -144,7 +146,7 @@
             </h1>
             <p class="text-stone-800 text-justify p-[1.5vmax]">
               I have a passion for tech, creativity, and finding solutions
-              through modern approach. I love the mental challenge that
+              through modern approach. I enjoy the mental challenge that
               programming presents and the possibility of being able to conceive
               a new idea and bring it to fruition. I am constantly working on
               upgrading myself with the evolving technologies such as IoT and
@@ -153,41 +155,126 @@
           </div>
         </div>
       </div>
+
+      <!-- Profile image and Skill set -->
+
       <div class="container mx-auto py-10">
-        <div class="grid grid-cols-2">
+        <div class="grid lg:grid-cols-2 md:lg:grid-cols-2 sm:grid-cols-1">
           <div class="mx-auto">
             <img
-              class="profile-img mx-auto"
+              class="profile-img mx-auto lg:w-[20vmax] sm:w-[40vmin]"
               src="./images/profile_image.jpg"
               alt="Pranjal Gaur Profile Image"
             />
-            <p class="text-stone-800 text-center w-[22vw]">
-              Hello there! I am Pranjal Gaur, a pre-final year student at
-              <a class="text-[#f8485e]" href="https://mbm.ac.in/"
-                >MBM Engineering College</a
-              >, Jodhpur.
-              <a class="text-[#f8485e]" href="#contact">Let's Connect!</a>
-            </p>
+            <div class="container text-center pb-6">
+              <p class="text-stone-800 lg:w-[22vw] sm:w-[40vmin]">
+                Hello there! I am Pranjal Gaur, a pre-final year student at
+                <a class="text-[#f8485e]" href="https://mbm.ac.in/"
+                  >MBM Engineering College</a
+                >, Jodhpur.
+                <a class="text-[#f8485e]" href="#contact">Let's Connect!</a>
+              </p>
+            </div>
           </div>
-          <div class="mx-auto">
-            <section class="bar-graph bar-graph-horizontal bar-graph-one">
-              <div class="bar-one">
-                <span class="year">2019</span>
-                <div class="bar" data-percentage="69.6%"></div>
-              </div>
-              <div class="bar-two">
-                <span class="year">2018</span>
-                <div class="bar" data-percentage="71%"></div>
-              </div>
-              <div class="bar-three">
-                <span class="year">2017</span>
-                <div class="bar" data-percentage="74.7%"></div>
-              </div>
-              <div class="bar-four">
-                <span class="year">2019</span>
-                <div class="bar" data-percentage="76.8%"></div>
-              </div>
-            </section>
+          <div class="mx-auto py-[6vh]">
+            <table>
+              <tr>
+                <td
+                  class="skill text-center sm:w-[10vmax] md:w-[15vmin] lg:w-[15vmin] h-[3vh]"
+                >
+                  <h4>C/C++</h4>
+                </td>
+                <td class="percent-fill w-[22vmax] h-[3vh]"></td>
+                <td class="percent text-right pr-2 w-[8vmax] h-[3vh]">
+                  <h4 class="text-[#363635]">75%</h4>
+                </td>
+              </tr>
+              <tr class="bg-[#eaeaea] h-[1vh]"></tr>
+            </table>
+            <table>
+              <tr>
+                <td
+                  class="skill text-center sm:w-[10vmax] md:w-[15vmin] h-[3vh]"
+                >
+                  <h4>Python</h4>
+                </td>
+                <td class="percent-fill w-[19vmax] h-[3vh]"></td>
+                <td class="percent text-right pr-2 w-[11vmax] h-[3vh]">
+                  <h4 class="text-[#363635]">65%</h4>
+                </td>
+              </tr>
+              <tr class="bg-[#eaeaea] h-[1vh]"></tr>
+            </table>
+            <table>
+              <tr>
+                <td
+                  class="skill text-center sm:w-[10vmax] md:w-[15vmin] h-[3vh]"
+                >
+                  <h4>Java</h4>
+                </td>
+                <td class="percent-fill w-[21vmax] h-[3vh]"></td>
+                <td class="percent text-right pr-2 w-[9vmax] h-[3vh]">
+                  <h4 class="text-[#363635]">70%</h4>
+                </td>
+              </tr>
+              <tr class="bg-[#eaeaea] h-[1vh]"></tr>
+            </table>
+            <table>
+              <tr>
+                <td
+                  class="skill text-center sm:w-[10vmax] md:w-[15vmin] h-[3vh]"
+                >
+                  <h4>HTML</h4>
+                </td>
+                <td class="percent-fill w-[22vmax] h-[3vh]"></td>
+                <td class="percent text-right pr-2 w-[8vmax] h-[3vh]">
+                  <h4 class="text-[#363635]">75%</h4>
+                </td>
+              </tr>
+              <tr class="bg-[#eaeaea] h-[1vh]"></tr>
+            </table>
+            <table>
+              <tr>
+                <td
+                  class="skill text-center sm:w-[10vmax] md:w-[15vmin] h-[3vh]"
+                >
+                  <h4>CSS</h4>
+                </td>
+                <td class="percent-fill w-[21vmax] h-[3vh]"></td>
+                <td class="percent text-right pr-2 w-[9vmax] h-[3vh]">
+                  <h4 class="text-[#363635]">70%</h4>
+                </td>
+              </tr>
+              <tr class="bg-[#eaeaea] h-[1vh]"></tr>
+            </table>
+            <table>
+              <tr>
+                <td
+                  class="skill text-center sm:w-[10vmax] md:w-[15vmin] h-[3vh]"
+                >
+                  <h4>Javascript</h4>
+                </td>
+                <td class="percent-fill w-[21vmax] h-[3vh]"></td>
+                <td class="percent text-right pr-2 w-[9vmax] h-[3vh]">
+                  <h4 class="text-[#363635]">70%</h4>
+                </td>
+              </tr>
+              <tr class="bg-[#eaeaea] h-[1vh]"></tr>
+            </table>
+            <table>
+              <tr>
+                <td
+                  class="skill text-center sm:w-[10vmax] md:w-[15vmin] h-[3vh]"
+                >
+                  <h4>React</h4>
+                </td>
+                <td class="percent-fill w-[18vmax] h-[3vh]"></td>
+                <td class="percent text-right pr-2 w-[12vmax] h-[3vh]">
+                  <h4 class="text-[#363635]">60%</h4>
+                </td>
+              </tr>
+              <tr class="bg-[#eaeaea] h-[1vh]"></tr>
+            </table>
           </div>
         </div>
       </div>
@@ -195,12 +282,38 @@
 
     <!-- Projects -->
 
-    <section id="projects" class="py-20">
+    <section id="projects" class="bg-cyan-500 py-20 h-[700px]">
       <div class="text-center">
-        <h1 class="serif-font text-4xl">PROJECTS</h1>
+        <h1 class="header serif-font text-center font-bold text-[4vmin]">
+          PROJECTS
+        </h1>
         <div
-          class="flex mx-auto bg-[#eee] rounded-full w-[14vw] h-[0.4vh]"
+          class="flex bg-[#eee] rounded-full mx-auto lg:w-[13vh] md:w-[13vh] sm:w-[13vmin] h-[0.5vh]"
         ></div>
+      </div>
+      <div class="card py-14">
+        <div>
+          <img
+            class="card-img-top image4 canvas w-[30vmax] h-[18vmax] rounded-lg"
+            src="./images/project-thumbnails/box-office.png"
+            alt="Card image cap"
+          />
+        </div>
+        <div
+          class="insta bg-[#1f1d36] flex flex-col w-[30vmax] h-[18vmax] rounded-lg"
+        ></div>
+        <div class="p1">
+          <div class="relative">
+            <p class="absolute bottom-0 text-[2.5vmin] serif-font">
+              Box Office Application
+            </p>
+            <button
+              class="border-4 b1 bg-cyan-500 border-cyan-500 rounded-lg b1 shadow-md shadow-cyan-500 px-6 py-2"
+            >
+              Visit
+            </button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -208,9 +321,11 @@
 
     <section id="blog" class="py-20 odd">
       <div class="text-center font-bold text-[#363635]">
-        <h1 class="serif-font text-4xl">BLOG</h1>
+        <h1 class="header serif-font text-center font-bold text-[4vmin]">
+          BLOG
+        </h1>
         <div
-          class="flex mx-auto bg-[#363635] rounded-full w-[7vw] h-[0.4vh]"
+          class="flex bg-[#363635] rounded-full mx-auto lg:w-[13vh] md:w-[13vh] sm:w-[13vmin] h-[0.5vh]"
         ></div>
       </div>
     </section>
@@ -219,11 +334,15 @@
 
     <section id="contact" class="py-20">
       <div class="text-center">
-        <h1 class="serif-font text-4xl">CONTACT</h1>
+        <h1 class="header serif-font text-center font-bold text-[4vmin]">
+          CONTACT
+        </h1>
         <div
-          class="flex mx-auto bg-[#eee] rounded-full w-[12vw] h-[0.4vh]"
+          class="flex bg-[#eee] rounded-full mx-auto lg:w-[13vh] md:w-[13vh] sm:w-[13vmin] h-[0.5vh]"
         ></div>
       </div>
     </section>
+
+    <script src="./projects.js"></script>
   </body>
 </html>

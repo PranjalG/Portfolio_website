@@ -110,7 +110,6 @@ a:hover {
 /* About Section */
 
 .header {
-  color: #363635;
   letter-spacing: 0.1rem;
 }
 
@@ -119,172 +118,42 @@ a:hover {
   width: 20vw;
 }
 
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 20px;
+/* Skill set Graph  */
+
+.skill {
+  background-color: #0774bd;
 }
 
-/* Bar Graph Horizontal */
-.bar-graph .year {
-  -webkit-animation: fade-in-text 2.2s 0.1s forwards;
-  -moz-animation: fade-in-text 2.2s 0.1s forwards;
-  animation: fade-in-text 2.2s 0.1s forwards;
-  opacity: 0;
+.percent-fill {
+  background-color: #49b6ff;
 }
 
-.bar-graph-horizontal {
-  max-width: 380px;
+.percent {
+  background-color: #8acefb;
 }
 
-.bar-graph-horizontal > div {
-  float: left;
-  margin-bottom: 8px;
-  width: 100%;
-}
+/* Project Section */
 
-.bar-graph-horizontal .year {
-  float: left;
-  margin-top: 18px;
-  width: 50px;
-  color: #f8485e;
-}
-
-.bar-graph-horizontal .bar {
-  border-radius: 3px;
-  height: 55px;
-  float: left;
-  overflow: hidden;
+.card {
+  /* need position to restrict .insta to sit inside this div */
   position: relative;
-  width: 0;
+  z-index: 1;
 }
 
-.bar-graph-one .bar::after {
-  -webkit-animation: fade-in-text 2.2s 0.1s forwards;
-  -moz-animation: fade-in-text 2.2s 0.1s forwards;
-  animation: fade-in-text 2.2s 0.1s forwards;
-  color: #fff;
-  content: attr(data-percentage);
-  font-weight: 700;
+.card-img-top {
   position: absolute;
-  right: 16px;
-  top: 17px;
+  z-index: 3;
 }
 
-.bar-graph-one .bar-one .bar {
-  background-color: #64b2d1;
-  -webkit-animation: show-bar-one 1.2s 0.1s forwards;
-  -moz-animation: show-bar-one 1.2s 0.1s forwards;
-  animation: show-bar-one 1.2s 0.1s forwards;
+.insta {
+  position: absolute;
+  top: 1;
+  z-index: 2;
+  transition: 333ms linear;
 }
 
-.bar-graph-one .bar-two .bar {
-  background-color: #5292ac;
-  -webkit-animation: show-bar-two 1.2s 0.2s forwards;
-  -moz-animation: show-bar-two 1.2s 0.2s forwards;
-  animation: show-bar-two 1.2s 0.2s forwards;
-}
-
-.bar-graph-one .bar-three .bar {
-  background-color: #407286;
-  -webkit-animation: show-bar-three 1.2s 0.3s forwards;
-  -moz-animation: show-bar-three 1.2s 0.3s forwards;
-  animation: show-bar-three 1.2s 0.3s forwards;
-}
-
-.bar-graph-one .bar-four .bar {
-  background-color: #2e515f;
-  -webkit-animation: show-bar-four 1.2s 0.4s forwards;
-  -moz-animation: show-bar-four 1.2s 0.4s forwards;
-  animation: show-bar-four 1.2s 0.4s forwards;
-}
-
-/* Bar Graph Horizontal Animations */
-@-webkit-keyframes show-bar-one {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 69.6%;
-  }
-}
-
-@keyframes show-bar-one {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 69.6%;
-  }
-}
-
-@-webkit-keyframes show-bar-two {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 71%;
-  }
-}
-
-@keyframes show-bar-two {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 71%;
-  }
-}
-
-@-webkit-keyframes show-bar-three {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 74.7%;
-  }
-}
-
-@keyframes show-bar-three {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 74.7%;
-  }
-}
-
-@-webkit-keyframes show-bar-four {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 76.8%;
-  }
-}
-
-@keyframes show-bar-four {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 76.8%;
-  }
-}
-
-@-webkit-keyframes fade-in-text {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in-text {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.p1 {
+  position: absolute;
+  z-index: 4;
+  opacity: 0;
 }
