@@ -282,7 +282,10 @@
 
     <!-- Projects -->
 
-    <section id="projects" class="bg-cyan-500 py-20 h-[700px]">
+    <section
+      id="projects"
+      class="py-20 lg:h-[60vmax] md:h-[90vmax] sm:h-[90vmax]"
+    >
       <div class="text-center">
         <h1 class="header serif-font text-center font-bold text-[4vmin]">
           PROJECTS
@@ -291,24 +294,137 @@
           class="flex bg-[#eee] rounded-full mx-auto lg:w-[13vh] md:w-[13vh] sm:w-[13vmin] h-[0.5vh]"
         ></div>
       </div>
-      <div class="card py-14">
-        <div>
-          <img
-            class="card-img-top image4 canvas w-[30vmax] h-[18vmax] rounded-lg"
-            src="./images/project-thumbnails/box-office.png"
-            alt="Card image cap"
-          />
-        </div>
-        <div
-          class="insta bg-[#1f1d36] flex flex-col w-[30vmax] h-[18vmax] rounded-lg"
-        ></div>
-        <div class="p1">
-          <div class="relative">
-            <p class="absolute bottom-0 text-[2.5vmin] serif-font">
+
+      <div
+        class="relative grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-4 ml-8"
+      >
+        <div class="card py-14 h-[20vmax]">
+          <div>
+            <img
+              class="card-img-top image1 canvas w-[30vmax] h-[18vmax] rounded-lg"
+              src="./images/project-thumbnails/box-office.png"
+              alt="Card image cap"
+            />
+          </div>
+          <div
+            class="block1 bg-[#1f1d36] flex flex-col w-[30vmax] h-[18vmax] rounded-lg"
+          >
+            <p class="bottom-0 text-[2.5vmin] serif-font m-auto mb-2 pb-2 py-8">
               Box Office Application
             </p>
             <button
-              class="border-4 b1 bg-cyan-500 border-cyan-500 rounded-lg b1 shadow-md shadow-cyan-500 px-6 py-2"
+              class="border-4 b1 bg-cyan-500 border-cyan-500 rounded-lg b1 shadow-md shadow-cyan-500 px-6 py-2 m-auto mt-2 py-8"
+              onclick="window.open('https://pranjalg.github.io/Box-office/#/')"
+            >
+              Visit
+            </button>
+          </div>
+        </div>
+        <div class="card py-14 h-[20vmax]">
+          <div>
+            <img
+              class="card-img-top image2 canvas w-[30vmax] h-[18vmax] rounded-lg"
+              src="./images/project-thumbnails/tic-tac-toe.png"
+              alt="Card image cap"
+            />
+          </div>
+          <div
+            class="block2 bg-[#1f1d36] flex flex-col w-[30vmax] h-[18vmax] rounded-lg"
+          >
+            <p class="bottom-0 text-[2.5vmin] serif-font m-auto mb-2 pb-2 py-8">
+              Tic Tac Toe Game
+            </p>
+            <button
+              class="border-4 b1 bg-cyan-500 border-cyan-500 rounded-lg b1 shadow-md shadow-cyan-500 px-6 py-2 m-auto mt-2 py-8"
+              onclick="window.open('https://tictac-game-blue-beam.surge.sh/')"
+            >
+              Visit
+            </button>
+          </div>
+        </div>
+        <div class="card py-14 h-[20vmax]">
+          <div>
+            <img
+              class="card-img-top image3 canvas w-[30vmax] h-[18vmax] rounded-lg"
+              src="./images/project-thumbnails/drumkit.png"
+              alt="Card image cap"
+            />
+          </div>
+          <div
+            class="block3 bg-[#1f1d36] flex flex-col w-[30vmax] h-[18vmax] rounded-lg"
+          >
+            <p class="bottom-0 text-[2.5vmin] serif-font m-auto mb-2 pb-2 py-8">
+              Drum Kit Webpage
+            </p>
+            <button
+              class="border-4 b1 bg-cyan-500 border-cyan-500 rounded-lg b1 shadow-md shadow-cyan-500 px-6 py-2 m-auto mt-2 py-8"
+              onclick="window.open('https://pranjalg.github.io/Drum-kit/')"
+            >
+              Visit
+            </button>
+          </div>
+        </div>
+        <div class="card py-14 h-[20vmax]">
+          <div>
+            <img
+              class="card-img-top image4 canvas w-[30vmax] h-[18vmax] rounded-lg"
+              src="./images/project-thumbnails/tindog.png"
+              alt="Card image cap"
+            />
+          </div>
+          <div
+            class="block4 bg-[#1f1d36] flex flex-col w-[30vmax] h-[18vmax] rounded-lg"
+          >
+            <p class="bottom-0 text-[2.5vmin] serif-font m-auto mb-2 pb-2 py-8">
+              TinDog Website Design
+            </p>
+            <button
+              class="border-4 b1 bg-cyan-500 border-cyan-500 rounded-lg b1 shadow-md shadow-cyan-500 px-6 py-2 m-auto mt-2 py-8"
+              onclick="window.open('https://pranjalg.github.io/TindDog-website/')"
+            >
+              Visit
+            </button>
+          </div>
+        </div>
+        <div class="card py-14 h-[20vmax]">
+          <div>
+            <img
+              class="card-img-top image5 canvas w-[30vmax] h-[18vmax] rounded-lg"
+              src="./images/project-thumbnails/card-for-business-page.png"
+              alt="Card image cap"
+            />
+          </div>
+          <div
+            class="block5 bg-[#1f1d36] flex flex-col w-[30vmax] h-[18vmax] rounded-lg"
+          >
+            <p class="bottom-0 text-[2.5vmin] serif-font m-auto mb-2 pb-2 py-8">
+              Card Design for business website
+            </p>
+            <button
+              class="border-4 b1 bg-cyan-500 border-cyan-500 rounded-lg b1 shadow-md shadow-cyan-500 px-6 py-2 m-auto mt-2 py-8"
+              onclick="window.open('https://dribbble.com/PranjalG')"
+            >
+              Visit
+            </button>
+          </div>
+        </div>
+        <div class="card py-14 h-[20vmax]">
+          <div>
+            <img
+              class="card-img-top image6 canvas w-[30vmax] h-[18vmax] rounded-lg"
+              src="./images/project-thumbnails/finance-app-design.png"
+              alt="Card image cap"
+            />
+          </div>
+          <div
+            class="block6 bg-[#1f1d36] flex flex-col w-[30vmax] h-[18vmax] rounded-lg"
+          >
+            <p class="bottom-0 text-[2.5vmin] serif-font m-auto mb-2 pb-2 py-8">
+              Finance Application Design
+            </p>
+            <button
+              class="border-4 b1 bg-cyan-500 border-cyan-500 rounded-lg b1 shadow-md shadow-cyan-500 px-6 py-2 m-auto mt-2 py-8"
+              onclick="window.open('https://dribbble.com/PranjalG')"
             >
               Visit
             </button>
