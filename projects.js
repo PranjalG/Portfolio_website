@@ -65,3 +65,36 @@ fadBlock.addEventListener("mouseleave", () => {
   fadBlock.style.opacity = 0;
   fad.style.opacity = 1;
 });
+
+const faa = document.querySelector(".image7");
+const faaBlock = document.querySelector(".block7");
+faaBlock.addEventListener("mouseenter", () => {
+  faaBlock.style.opacity = 1;
+  faa.style.opacity = 0;
+});
+faaBlock.addEventListener("mouseleave", () => {
+  faaBlock.style.opacity = 0;
+  faa.style.opacity = 1;
+});
+
+const ee = document.querySelector(".image8");
+const eeBlock = document.querySelector(".block8");
+eeBlock.addEventListener("mouseenter", () => {
+  eeBlock.style.opacity = 1;
+  ee.style.opacity = 0;
+});
+eeBlock.addEventListener("mouseleave", () => {
+  eeBlock.style.opacity = 0;
+  ee.style.opacity = 1;
+});
+
+const pd = document.querySelector(".image9");
+const pdBlock = document.querySelector(".block9");
+pdBlock.addEventListener("mouseenter", () => {
+  pdBlock.style.opacity = 1;
+  pd.style.opacity = 0;
+});
+pdBlock.addEventListener("mouseleave", () => {
+  pdBlock.style.opacity = 0;
+  pd.style.opacity = 1;
+});
