@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Home</title>
-    <meta name="description" content="Pranjal Gaur portfolio website" />
+    <title>Pranjal Gaur | Flutter Developer & Mobile Engineer</title>
+    <meta
+      name="description"
+      content="Pranjal Gaur is a Flutter developer and mobile engineer building modern cross-platform apps with BLoC, PostgreSQL, REST APIs, and production-ready integrations."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Pranjal Gaur | Flutter Developer" />
+    <meta
+      property="og:description"
+      content="Modern portfolio for a Flutter developer specializing in mobile apps, full-stack integrations, and production-ready experiences."
+    />
+    <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Eczar&family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Eczar:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -18,649 +27,493 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles.css" />
-
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    /> -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <!-- Introduction section -->
-
-    <section id="home" class="h-screen">
-      <!-- Background -->
-
-      <div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-
-        <!-- Intro-message  -->
-
-        <div class="py-[43vh]">
-          <div class="text-center tracking-widest">
-            <h1 class="text-[6vmin] serif-font font-bold">
-              Hello, I'm <span class="my-name">Pranjal Gaur</span>
-            </h1>
-            <p class="text-[4.5vmin] serif-font">
-              Software Developer / Flutter Developer / Cross Platform Mobile App Developer
-            </p>
-          </div>
+    <div class="page-shell">
+      <header class="site-header reveal-on-scroll">
+        <div class="header-inner">
+          <a class="brand" href="#home">PRANJAL GAUR</a>
+          <nav aria-label="Primary navigation" class="nav-links">
+            <a href="#about">About</a>
+            <a href="#stack">Stack</a>
+            <a href="#projects">Projects</a>
+            <a href="#case-studies">Case Studies</a>
+            <a href="#experience">Experience</a>
+            <a href="#beyond">Beyond</a>
+            <a href="#contact">Contact</a>
+          </nav>
         </div>
-      </div>
-    </section>
+      </header>
 
-    <!-- Navbar -->
-
-    <div
-      class="border-t-4 pt-2 font-bold border-cyan-400 bg-[#eaeaea] text-[#1f1d36] bottom-0 pl-5"
-    >
-      <a href="#home" class="navbar-element px-5 pb-2 text-[2.5vmin]">HOME</a>
-      <a href="#about" class="navbar-element px-5 pb-2 text-[2.5vmin]">ABOUT</a>
-      <a href="#projects" class="navbar-element px-5 pb-2 text-[2.5vmin]">
-        PROJECTS
-      </a>
-      <a href="#blog" class="navbar-element px-5 pb-2 text-[2.5vmin]">BLOG</a>
-      <a href="#contact" class="navbar-element px-5 pb-2 text-[2.5vmin]">
-        CONTACT
-      </a>
-    </div>
-
-    <!-- About   -->
-
-    <section id="about" class="py-20 odd">
-      <div class="text-center">
-        <h1
-          class="header text-[#363635] serif-font text-center font-bold text-[4vmin]"
-        >
-          ABOUT
-        </h1>
-        <div
-          class="flex bg-[#363635] rounded-full mx-auto w-[13vh] h-[0.5vh]"
-        ></div>
-      </div>
-      <div class="container mx-auto py-10">
-        <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
-          <div>
-            <img
-              class="mx-auto pt-8 h-[20vh]"
-              src="./images/icons/coding.png"
-              alt="coding"
-            />
-            <h1
-              class="text-stone-800 font-bold text-center tracking-wider py-4"
-            >
-              Programming
-            </h1>
-            <p class="text-stone-800 text-justify p-[1.5vmax]">
-              I had an inclination towards technology and computing since
-              childhood but my first exposure was in 2017 years ago where I selected
-              Java (IP) for HSC and scored 99/100 in my final exam. I learned C/C++
-              during the first year of college, joined AI Club as a sophomore where I learnt Python
-              and Machine learning. Following that, started working with Dart and Flutter Framework.
-            </p>
+      <main>
+        <section id="home" class="hero section-bleed reveal-on-scroll">
+          <div class="hero-background">
+            <canvas id="hero-canvas" aria-hidden="true"></canvas>
+            <div class="hero-aurora"></div>
           </div>
-          <div>
-            <img
-              class="mx-auto pt-8 h-[20vh]"
-              src="./images/icons/web-development.png"
-              alt="tech"
-            />
-            <h1
-              class="text-stone-800 font-bold text-center tracking-wider py-4"
-            >
-              Development
-            </h1>
-            <p class="text-stone-800 text-justify p-[1.5vmax]">
-              I am interested in developing cross-platform applications as it helps to
-              execute every bit of knowledge gained and present out a means to solve a 
-              real world problem. I have practiced web as well as mobile development 
-              emphasizing on good user experience (front end). I have worked on personal 
-              full-stack projects involving backend and cloud platforms.
-            </p>
-          </div>
-          <div>
-            <img
-              class="mx-auto pt-8 h-[20vh]"
-              src="./images/icons/design.png"
-              alt=" "
-            />
-            <h1
-              class="text-stone-800 font-bold text-center tracking-wider py-4"
-            >
-              Design
-            </h1>
-            <p class="text-stone-800 text-justify p-[1.5vmax]">
-              An artist from the inner core, I have a drive for creating
-              applications that not only function efficiently but also entice
-              the viewer. I have worked on UI/UX design projects using Figma and
-              acquired knowledge about creating visual masterpiece through
-              mindfulness and resourcefulness.
-            </p>
-          </div>
-          <div>
-            <img
-              class="mx-auto pt-8 h-[20vh]"
-              src="./images/icons/iot-cloud.png"
-              alt=" "
-            />
-            <h1
-              class="text-stone-800 font-bold text-center tracking-wider py-4"
-            >
-              Exploring
-            </h1>
-            <p class="text-stone-800 text-justify p-[1.5vmax]">
-              I have a passion for tech, creativity, and finding solutions
-              through modern approach. I enjoy the mental challenge that
-              programming presents and the possibility of being able to conceive
-              a new idea and bring it to fruition. I am constantly working on
-              upgrading myself with the evolving technologies such as Machine Learning
-              Generative AI and creating custom Chatbots using Python (AI).
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <!-- Profile image and Skill set -->
-
-      <div class="container mx-auto py-10">
-        <div class="grid lg:grid-cols-2 md:lg:grid-cols-2 sm:grid-cols-1">
-          <div class="mx-auto">
-            <img
-              class="profile-img mx-auto w-[25vh]"
-              src="./images/profile_image.jpg"
-              alt="Pranjal Gaur Profile Image"
-            />
-            <div class="container pb-6">
-              <p class="text-stone-800 text-center w-[25vh]">
-                Hello there! I am Pranjal Gaur, a software developer from
-                <a class="text-[#f8485e]" href="https://mbm.ac.in/"
-                  >MBM University</a>
-                  , Jodhpur. I am currently working at <a class="text-[#f8485e]" href="https://www.securemeters.com/"
-                  >Secure Meters Ltd.
-                  </a>
-                  <br></br>
-                <a class="text-[#f8485e]" href="#contact"> Let's Connect!</a>
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <div class="hero-eyebrow">Flutter Engineer · Product-minded Mobile Apps</div>
+              <h1>Building enterprise-grade mobile products with Flutter, BLoC, PostgreSQL, and scalable API architecture.</h1>
+              <p>
+                I lead product-focused Flutter delivery for connected enterprise workflows, turning complex energy and industrial data into polished, reliable mobile experiences.
               </p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#case-studies">View case studies</a>
+                <a class="btn btn-outline" href="#contact">Let’s connect</a>
+              </div>
+              <div class="hero-stats">
+                <div class="hero-stat">
+                  <span>100+</span>
+                  <p>SME clients served</p>
+                </div>
+                <div class="hero-stat">
+                  <span>40%</span>
+                  <p>faster dashboard load time</p>
+                </div>
+                <div class="hero-stat">
+                  <span>35%</span>
+                  <p>crash reduction</p>
+                </div>
+              </div>
+              <div class="hero-badges">
+                <span>Flutter</span>
+                <span>Dart</span>
+                <span>PostgreSQL</span>
+                <span>REST APIs</span>
+                <span>Firebase</span>
+                <span>Android / iOS</span>
+              </div>
+            </div>
+
+            <div class="hero-card">
+              <div class="hero-card-glow"></div>
+              <div class="hero-profile-card">
+                <img
+                  src="./images/profile_image.jpg"
+                  alt="Pranjal Gaur"
+                  class="profile-image"
+                />
+                <div class="profile-copy">
+                  <p class="profile-role">Mobile App Engineer</p>
+                  <h2>Pranjal Gaur</h2>
+                  <p class="profile-meta">Flutter · BLoC · Full Stack · APIs · PostgreSQL</p>
+                  <span class="availability-pill">Open to new opportunities</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="mx-auto py-[6vh]">
-            <table>
-              <tr>
-                <td class="skill text-center w-[15vmin] h-[3vh]">
-                  <h4>Flutter</h4>
-                </td>
-                <td class="percent-fill w-[22vmax] h-[3vh]"></td>
-                <td class="percent text-right pr-2 w-[8vmax] h-[3vh]">
-                  <h4 class="text-[#363635]">75%</h4>
-                </td>
-              </tr>
-              <tr class="bg-[#eaeaea] h-[1vh]"></tr>
-            </table>
-            <table>
-              <tr>
-                <td class="skill text-center w-[15vmin] h-[3vh]">
-                  <h4>Bloc</h4>
-                </td>
-                <td class="percent-fill w-[19vmax] h-[3vh]"></td>
-                <td class="percent text-right pr-2 w-[11vmax] h-[3vh]">
-                  <h4 class="text-[#363635]">70%</h4>
-                </td>
-              </tr>
-              <tr class="bg-[#eaeaea] h-[1vh]"></tr>
-            </table>
-            <table>
-              <tr>
-                <td class="skill text-center w-[15vmin] h-[3vh]">
-                  <h4>Dart</h4>
-                </td>
-                <td class="percent-fill w-[19vmax] h-[3vh]"></td>
-                <td class="percent text-right pr-2 w-[11vmax] h-[3vh]">
-                  <h4 class="text-[#363635]">70%</h4>
-                </td>
-              </tr>
-              <tr class="bg-[#eaeaea] h-[1vh]"></tr>
-            </table>
-            <table>
-              <tr>
-                <td class="skill text-center w-[15vmin] h-[3vh]">
-                  <h4>Java</h4>
-                </td>
-                <td class="percent-fill w-[21vmax] h-[3vh]"></td>
-                <td class="percent text-right pr-2 w-[9vmax] h-[3vh]">
-                  <h4 class="text-[#363635]">60%</h4>
-                </td>
-              </tr>
-              <tr class="bg-[#eaeaea] h-[1vh]"></tr>
-            </table>
-            <table>
-              <tr>
-                <td class="skill text-center w-[15vmin] h-[3vh]">
-                  <h4>.NET</h4>
-                </td>
-                <td class="percent-fill w-[22vmax] h-[3vh]"></td>
-                <td class="percent text-right pr-2 w-[8vmax] h-[3vh]">
-                  <h4 class="text-[#363635]">65%</h4>
-                </td>
-              </tr>
-              <tr class="bg-[#eaeaea] h-[1vh]"></tr>
-            </table>
-            <table>
-              <tr>
-                <td class="skill text-center w-[15vmin] h-[3vh]">
-                  <h4>PostgreSQL</h4>
-                </td>
-                <td class="percent-fill w-[21vmax] h-[3vh]"></td>
-                <td class="percent text-right pr-2 w-[9vmax] h-[3vh]">
-                  <h4 class="text-[#363635]">60%</h4>
-                </td>
-              </tr>
-              <tr class="bg-[#eaeaea] h-[1vh]"></tr>
-            </table>
-            <table>
-              <tr>
-                <td class="skill text-center w-[15vmin] h-[3vh]">
-                  <h4>Firebase</h4>
-                </td>
-                <td class="percent-fill w-[21vmax] h-[3vh]"></td>
-                <td class="percent text-right pr-2 w-[9vmax] h-[3vh]">
-                  <h4 class="text-[#363635]">50%</h4>
-                </td>
-              </tr>
-              <tr class="bg-[#eaeaea] h-[1vh]"></tr>
-            </table>
-            <table>
-              <tr>
-                <td class="skill text-center w-[15vmin] h-[3vh]">
-                  <h4>Figma</h4>
-                </td>
-                <td class="percent-fill w-[18vmax] h-[3vh]"></td>
-                <td class="percent text-right pr-2 w-[12vmax] h-[3vh]">
-                  <h4 class="text-[#363635]">60%</h4>
-                </td>
-              </tr>
-              <tr class="bg-[#eaeaea] h-[1vh]"></tr>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- Projects -->
+        <section id="about" class="section reveal-on-scroll">
+          <div class="section-header">
+            <p class="section-label">About Me</p>
+            <h2>Focused on delivering mobile products that feel fast, intuitive, and reliable.</h2>
+          </div>
+          <div class="section-grid">
+            <div class="glass-panel about-card">
+              <p>
+                I’m a Flutter developer with hands-on experience building production mobile apps, integrating REST APIs, and architecting connected systems. I enjoy translating product goals into polished experiences that work smoothly on Android and iOS.
+              </p>
+              <p>
+                My approach combines modern UI design, state-managed Flutter architecture, and backend-ready data flows. I have strong exposure to PostgreSQL, cloud-connected services, and feature delivery for real users.
+              </p>
+            </div>
 
-    <section
-      id="projects"
-      class="py-20 lg:h-[80vmax] md:h-[110vmax] sm:h-[110vmax]"
-    >
-      <div class="text-center">
-        <h1 class="header serif-font text-center font-bold text-[4vmin]">
-          PROJECTS
-        </h1>
-        <div
-          class="flex bg-[#eee] rounded-full mx-auto w-[13vh] h-[0.5vh]"
-        ></div>
-      </div>
+            <div class="timeline-summary">
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div>
+                  <p class="timeline-title">Software Developer</p>
+                  <p class="timeline-meta">Secure Meters Ltd — Flutter & mobile app delivery</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div>
+                  <p class="timeline-title">Mobile-first product engineering</p>
+                  <p class="timeline-meta">APIs, PostgreSQL, cloud integrations, and app lifecycle optimization.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div>
+                  <p class="timeline-title">Learning & leadership</p>
+                  <p class="timeline-meta">MBM University, AI club, and cross-functional product collaboration.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <div
-        class="relative grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 ml-8"
-      >
-        <div class="card py-14 h-[20vmax]">
-          <div>
-            <img
-              class="card-img-top image1 canvas w-[30vmax] h-[18vmax] rounded-lg"
-              src="./images/project-thumbnails/box-office.png"
-              alt="Card image cap"
-            />
+        <section id="stack" class="section section-dark reveal-on-scroll">
+          <div class="section-header">
+            <p class="section-label">Tech Stack</p>
+            <h2>Core technologies I use every day.</h2>
           </div>
-          <div
-            class="block1 bg-[#1f1d36] flex flex-col w-[30vmax] h-[18vmax] rounded-lg"
-          >
-            <p class="bottom-0 text-[2.5vmin] serif-font m-auto mb-2 pb-2 py-8">
-              Box Office Application
-            </p>
-            <button
-              class="border-4 b1 bg-cyan-500 border-cyan-500 rounded-lg shadow-md shadow-cyan-500 px-6 py-2 m-auto mt-2 py-8"
-              onclick="window.open('https://pranjalg.github.io/Box-office/#/')"
-            >
-              Visit
-            </button>
+          <div class="stack-grid">
+            <div class="stack-card"><span class="stack-name">Flutter</span><p>Cross-platform UI, animation, architecture.</p></div>
+            <div class="stack-card"><span class="stack-name">Dart</span><p>Strong typed code, async flows, clean architecture.</p></div>
+            <div class="stack-card"><span class="stack-name">Firebase</span><p>Realtime syncing, auth, cloud functions.</p></div>
+            <div class="stack-card"><span class="stack-name">PostgreSQL</span><p>Relational data models and production databases.</p></div>
+            <div class="stack-card"><span class="stack-name">REST APIs</span><p>API integration, request flow, error handling.</p></div>
+            <div class="stack-card"><span class="stack-name">Git</span><p>Version control, collaboration, branch workflows.</p></div>
+            <div class="stack-card"><span class="stack-name">Android</span><p>Platform optimizations and device integration.</p></div>
+            <div class="stack-card"><span class="stack-name">iOS</span><p>Native feel, performance, and distribution readiness.</p></div>
           </div>
-        </div>
-        <div class="card py-14 h-[20vmax]">
-          <div>
-            <img
-              class="card-img-top image2 canvas w-[30vmax] h-[18vmax] rounded-lg"
-              src="./images/project-thumbnails/tic-tac-toe.png"
-              alt="Card image cap"
-            />
-          </div>
-          <div
-            class="block2 bg-[#1f1d36] flex flex-col w-[30vmax] h-[18vmax] rounded-lg"
-          >
-            <p class="bottom-0 text-[2.5vmin] serif-font m-auto mb-2 pb-2 py-8">
-              Tic Tac Toe Game
-            </p>
-            <button
-              class="border-4 b1 bg-cyan-500 border-cyan-500 rounded-lg shadow-md shadow-cyan-500 px-6 py-2 m-auto mt-2 py-8"
-              onclick="window.open('https://tictac-game-blue-beam.surge.sh/')"
-            >
-              Visit
-            </button>
-          </div>
-        </div>
-        <div class="card py-14 h-[20vmax]">
-          <div>
-            <img
-              class="card-img-top image3 canvas w-[30vmax] h-[18vmax] rounded-lg"
-              src="./images/project-thumbnails/drumkit.png"
-              alt="Card image cap"
-            />
-          </div>
-          <div
-            class="block3 bg-[#1f1d36] flex flex-col w-[30vmax] h-[18vmax] rounded-lg"
-          >
-            <p class="bottom-0 text-[2.5vmin] serif-font m-auto mb-2 pb-2 py-8">
-              Drum Kit Webpage
-            </p>
-            <button
-              class="border-4 b1 bg-cyan-500 border-cyan-500 rounded-lg shadow-md shadow-cyan-500 px-6 py-2 m-auto mt-2 py-8"
-              onclick="window.open('https://pranjalg.github.io/Drum-kit/')"
-            >
-              Visit
-            </button>
-          </div>
-        </div>
-        <div class="card py-14 h-[20vmax]">
-          <div>
-            <img
-              class="card-img-top image4 canvas w-[30vmax] h-[18vmax] rounded-lg"
-              src="./images/project-thumbnails/tindog.png"
-              alt="Card image cap"
-            />
-          </div>
-          <div
-            class="block4 bg-[#1f1d36] flex flex-col w-[30vmax] h-[18vmax] rounded-lg"
-          >
-            <p class="bottom-0 text-[2.5vmin] serif-font m-auto mb-2 pb-2 py-8">
-              TinDog Website Design
-            </p>
-            <button
-              class="border-4 b1 bg-cyan-500 border-cyan-500 rounded-lg shadow-md shadow-cyan-500 px-6 py-2 m-auto mt-2 py-8"
-              onclick="window.open('https://pranjalg.github.io/TindDog-website/')"
-            >
-              Visit
-            </button>
-          </div>
-        </div>
-        <div class="card py-14 h-[20vmax]">
-          <div>
-            <img
-              class="card-img-top image5 canvas w-[30vmax] h-[18vmax] rounded-lg"
-              src="./images/project-thumbnails/card-for-business-page.png"
-              alt="Card image cap"
-            />
-          </div>
-          <div
-            class="block5 bg-[#1f1d36] flex flex-col w-[30vmax] h-[18vmax] rounded-lg"
-          >
-            <p class="bottom-0 text-[2.5vmin] serif-font m-auto mb-2 pb-2 py-8">
-              Card Design for business website
-            </p>
-            <button
-              class="border-4 b1 bg-cyan-500 border-cyan-500 rounded-lg shadow-md shadow-cyan-500 px-6 py-2 m-auto mt-2 py-8"
-              onclick="window.open('https://dribbble.com/PranjalG')"
-            >
-              Visit
-            </button>
-          </div>
-        </div>
-        <div class="card py-14 h-[20vmax]">
-          <div>
-            <img
-              class="card-img-top image6 canvas w-[30vmax] h-[18vmax] rounded-lg"
-              src="./images/project-thumbnails/finance-app-design.png"
-              alt="Card image cap"
-            />
-          </div>
-          <div
-            class="block6 bg-[#1f1d36] flex flex-col w-[30vmax] h-[18vmax] rounded-lg"
-          >
-            <p class="bottom-0 text-[2.5vmin] serif-font m-auto mb-2 pb-2 py-8">
-              Finance Application Design
-            </p>
-            <button
-              class="border-4 b1 bg-cyan-500 border-cyan-500 rounded-lg shadow-md shadow-cyan-500 px-6 py-2 m-auto mt-2 py-8"
-              onclick="window.open('https://dribbble.com/PranjalG')"
-            >
-              Visit
-            </button>
-          </div>
-        </div>
-        <div class="card py-14 h-[20vmax]">
-          <div>
-            <img
-              class="card-img-top image7 canvas w-[30vmax] h-[18vmax] rounded-lg"
-              src="./images/project-thumbnails/articles_app.png"
-              alt="Card image cap"
-            />
-          </div>
-          <div
-            class="block7 bg-[#1f1d36] flex flex-col w-[30vmax] h-[18vmax] rounded-lg"
-          >
-            <p class="bottom-0 text-[2.5vmin] serif-font m-auto mb-2 pb-2 py-8">
-              Articles Mobile App
-            </p>
-            <button
-              class="border-4 b1 bg-cyan-500 border-cyan-500 rounded-lg shadow-md shadow-cyan-500 px-6 py-2 m-auto mt-2 py-8"
-              onclick="window.open('https://github.com/PranjalG/flutter_articles_app')"
-            >
-              Visit
-            </button>
-          </div>
-        </div>
-        <div class="card py-14 h-[20vmax]">
-          <div>
-            <img
-              class="card-img-top image8 canvas w-[30vmax] h-[18vmax] rounded-lg"
-              src="./images/project-thumbnails/energy_efficiency.png"
-              alt="Card image cap"
-            />
-          </div>
-          <div
-            class="block8 bg-[#1f1d36] flex flex-col w-[30vmax] h-[18vmax] rounded-lg"
-          >
-            <p class="bottom-0 text-[2.5vmin] serif-font m-auto mb-2 pb-2 py-8">
-              Energy Efficiency Mobile App
-            </p>
-            <button
-              class="border-4 b1 bg-cyan-500 border-cyan-500 rounded-lg shadow-md shadow-cyan-500 px-6 py-2 m-auto mt-2 py-8"
-              onclick="window.open('https://play.google.com/store/apps/details?id=com.secure.myewatchonline&hl=en_IN')"
-            >
-              Visit
-            </button>
-          </div>
-        </div>
-        <div class="card py-14 h-[20vmax]">
-          <div>
-            <img
-              class="card-img-top image9 canvas w-[30vmax] h-[18vmax] rounded-lg"
-              src="./images/project-thumbnails/healthcare.png"
-              alt="Card image cap"
-            />
-          </div>
-          <div
-            class="block9 bg-[#1f1d36] flex flex-col w-[30vmax] h-[18vmax] rounded-lg"
-          >
-            <p class="bottom-0 text-[2.5vmin] serif-font m-auto mb-2 pb-2 py-8">
-              Healthcare Mobile App
-            </p>
-            <button
-              class="border-4 b1 bg-cyan-500 border-cyan-500 rounded-lg shadow-md shadow-cyan-500 px-6 py-2 m-auto mt-2 py-8"
-              onclick="window.open('https://github.com/PranjalG/quick_med_mobile_app')"
-            >
-              Visit
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- BLOG -->
-
-    <section id="blog" class="py-20 odd">
-      <div class="text-center font-bold text-[#363635]">
-        <h1 class="header serif-font text-center font-bold text-[4vmin]">
-          BLOG
-        </h1>
-        <div
-          class="flex bg-[#363635] rounded-full mx-auto w-[13vh] h-[0.5vh]"
-        ></div>
-      </div>
-      <div
-        class="grid lg:grid-cols-4 gap-4 md:grid-cols-2 sm:grid-cols-1 m-12 flex items-center justify-center"
-      >
-        <div
-          class="border-cyan-500 border-4 rounded-3xl w-[22vmax] lg:h-[27vw] md:h-[30vw]"
-        >
-          <h1 class="text-[#000] text-center text-[1.3vmax] m-4 serif-font">
-            Exploring Peri-Urban Areas
-          </h1>
-          <a href="./articles/blog1.html">
-            <img
-              class="mx-auto w-[20vmax] h-[12vmax] rounded-xl"
-              src="./images/blogs/exploring-peri-urban-areas.png"
-            />
-            <p class="text-[#000] m-4 text-justify text-[0.9vmax]">
-              When was the last time you visited the peri-urban areas of your
-              city? Was it when you went out to spend some leisure time with
-              your family and friends? Or was it when you wanted to yourself to
-              be lost amidst the greens?... 
-            </p>
-          </a>
-        </div>
-        <div
-          class="border-cyan-500 border-4 rounded-3xl w-[22vmax] lg:h-[27vw] md:h-[30vw]"
-        >
-          <h1 class="text-[#000] text-center text-[1.3vmax] m-4 serif-font">
-            Resilience in Life
-          </h1>
-          <a href="./articles/blog2.html">
-            <img
-              class="mx-auto w-[20vmax] h-[12vmax] rounded-xl"
-              src="./images/blogs/resilience.jpg"
-            />
-            <p class="text-[#000] m-4 text-justify text-[0.9vmax]">
-              Resilience is an ineffable quality that makes people face
-              difficult situations of life and come out stronger. It is the
-              process of adapting well in the time of adversity, trauma,
-              tragedy, threats, or even significant sources of stress... 
-            </p>
-          </a>
-        </div>
-        <div
-          class="border-cyan-500 border-4 rounded-3xl w-[22vmax] lg:h-[27vw] md:h-[30vw]"
-        >
-          <h1 class="text-[#000] text-center text-[1.3vmax] m-4 serif-font">
-            Creative Writing : Conflict
-          </h1>
-          <a href="./articles/blog3.html">
-            <img
-              class="mx-auto w-[20vmax] h-[12vmax] rounded-xl"
-              src="./images/blogs/conflict.png"
-            />
-            <p class="text-[#000] m-4 text-justify text-[0.9vmax]">
-              It was a breezy morning when I visited the Singh's abode. Lavanya
-              was helping her mother to serve breakfast. Her face had lost
-              colour since we last met. I had never experienced such a quiet and
-              grave... 
-            </p>
-          </a>
-        </div>
-        <div
-          class="border-cyan-500 border-4 rounded-3xl w-[22vmax] lg:h-[27vw] md:h-[30vw]"
-        >
-          <h1 class="text-[#000] text-center text-[1.3vmax] m-4 serif-font">
-            What is Leadership?
-          </h1>
-          <a href="./articles/blog4.html">
-            <img
-              class="mx-auto w-[20vmax] h-[12vmax] rounded-xl"
-              src="./images/blogs/leadership.jpg"
-            />
-            <p class="text-[#000] m-4 text-justify text-[0.9vmax]">
-              "If your actions inspire others to dream more, learn more, do more
-              and become more, you are a leader."
-              <br />
-              I would define leadership as the ability to initiate, to process
-              and work coherently on... 
-            </p>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-
-    <section id="contact" class="py-20 pb-0">
-      <div class="text-center">
-        <h1 class="header serif-font text-center font-bold text-[4vmin]">
-          CONTACT
-        </h1>
-        <div
-          class="flex bg-[#eee] rounded-full mx-auto w-[13vh] h-[0.5vh]"
-        ></div>
-      </div>
-
-      <div class="gird grid-cols-1">
-        <h1 class="text-center text-[1.3vmax] text-cyan-400 serif-font m-8">
-          Have a question, want to give feedback?
-        </h1>
-        <a href="mailto:gaurpranjal236@gmail.com">
-          <div class="flex items-center justify-center m-6">
-            <button class="text-[#fff] rounded-xl bg-[#f8485e] py-2 px-4">
-              Send me an email
-            </button>
+        <section id="projects" class="section reveal-on-scroll">
+          <div class="section-header">
+            <p class="section-label">Featured Projects</p>
+            <h2>Projects designed for clarity, performance, and polished interaction.</h2>
           </div>
-        </a>
-      </div>
-      <div class="flex items-center justify-center bg-[#14122a] pt-20 mt-20">
-        <div class="m-4">
-          <i
-            class="fab fa-github fa-2x hover:text-[#000]"
-            onclick="window.open('https://github.com/PranjalG')"
-          ></i>
-        </div>
-        <div class="m-4">
-          <i
-            class="fab fa-linkedin fa-2x hover:text-[#0077B5]"
-            onclick="window.open('https://www.linkedin.com/in/pranjal-gaur-3b5213205/')"
-          ></i>
-        </div>
-        <div class="m-4">
-          <i
-            class="fab fa-dribbble fa-2x hover:text-[#e6447d]"
-            onclick="window.open('https://dribbble.com/PranjalG')"
-          ></i>
-        </div>
-        <div class="m-4">
-          <i
-            class="fab fa-twitter fa-2x hover:text-[#08a0e9]"
-            onclick="window.open('https://mobile.twitter.com/pranjal_g_')"
-          ></i>
-        </div>
-      </div>
-      <div class="flex items-center justify-center bg-[#14122a] pt-4 pb-8">
-        <div>
-          <h6 class="text-[#7e7e7e]">
-            <i class="far fa-copyright"></i>
-            Pranjal Gaur 2022
-          </h6>
-        </div>
-      </div>
-    </section>
+          <div class="projects-grid">
+            <article class="project-card">
+              <img src="./images/project-thumbnails/box-office.png" alt="Box Office Application screenshot" />
+              <div class="project-copy">
+                <p class="project-tag">Web app</p>
+                <h3>Box Office Application</h3>
+                <p class="project-description">A responsive entertainment dashboard with movie discovery, search, and live data features.</p>
+                <div class="project-meta">
+                  <span>JavaScript</span><span>UX</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://pranjalg.github.io/Box-office/#/" target="_blank" rel="noreferrer">Live demo</a>
+                </div>
+              </div>
+            </article>
 
+            <article class="project-card">
+              <img src="./images/project-thumbnails/tic-tac-toe.png" alt="Tic Tac Toe Game" />
+              <div class="project-copy">
+                <p class="project-tag">Interactive game</p>
+                <h3>Tic Tac Toe</h3>
+                <p class="project-description">A classic game with polished controls and a refined play experience on web devices.</p>
+                <div class="project-meta">
+                  <span>HTML</span><span>CSS</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://tictac-game-blue-beam.surge.sh/" target="_blank" rel="noreferrer">Live demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="./images/project-thumbnails/drumkit.png" alt="Drum Kit Webpage" />
+              <div class="project-copy">
+                <p class="project-tag">Creative landing page</p>
+                <h3>Drum Kit Interface</h3>
+                <p class="project-description">A musical experience with interactive controls and animated audio feedback.</p>
+                <div class="project-meta">
+                  <span>JavaScript</span><span>Animation</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://pranjalg.github.io/Drum-kit/" target="_blank" rel="noreferrer">Live demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="./images/project-thumbnails/tindog.png" alt="TinDog Website Design" />
+              <div class="project-copy">
+                <p class="project-tag">Brand concept</p>
+                <h3>TinDog Landing Page</h3>
+                <p class="project-description">A clean web concept for a pet-focused brand with strong visual rhythm.</p>
+                <div class="project-meta">
+                  <span>Design</span><span>Responsive</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://pranjalg.github.io/TindDog-website/" target="_blank" rel="noreferrer">Live demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="./images/project-thumbnails/finance-app-design.png" alt="Finance Application Design" />
+              <div class="project-copy">
+                <p class="project-tag">UI design</p>
+                <h3>Finance App Concept</h3>
+                <p class="project-description">A mobile-first finance interface with attention to data clarity and hierarchy.</p>
+                <div class="project-meta">
+                  <span>Figma</span><span>Design</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://dribbble.com/PranjalG" target="_blank" rel="noreferrer">View work</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="./images/project-thumbnails/articles_app.png" alt="Articles Mobile App" />
+              <div class="project-copy">
+                <p class="project-tag">Mobile app</p>
+                <h3>Articles App</h3>
+                <p class="project-description">A Flutter project with dynamic article listings, navigation, and mobile presentation.</p>
+                <div class="project-meta">
+                  <span>Flutter</span><span>GitHub</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/PranjalG/flutter_articles_app" target="_blank" rel="noreferrer">View code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="./images/project-thumbnails/energy_efficiency.png" alt="Energy Efficiency Mobile App" />
+              <div class="project-copy">
+                <p class="project-tag">Mobile dashboard</p>
+                <h3>Energy Efficiency App</h3>
+                <p class="project-description">A concept for energy monitoring, insights, and climate-aware dashboard experiences.</p>
+                <div class="project-meta">
+                  <span>Flutter</span><span>UX</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://play.google.com/store/apps/details?id=com.secure.myewatchonline&hl=en_IN" target="_blank" rel="noreferrer">View listing</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="./images/project-thumbnails/healthcare.png" alt="Healthcare Mobile App" />
+              <div class="project-copy">
+                <p class="project-tag">Healthcare solution</p>
+                <h3>Healthcare App</h3>
+                <p class="project-description">A mobile patient-care design with clear data flows and simplified navigation.</p>
+                <div class="project-meta">
+                  <span>Flutter</span><span>GitHub</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/PranjalG/quick_med_mobile_app" target="_blank" rel="noreferrer">View code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="case-studies" class="section reveal-on-scroll">
+          <div class="section-header">
+            <p class="section-label">Case Studies</p>
+            <h2>Ownership-led product work across mobile, analytics, and enterprise tooling.</h2>
+          </div>
+          <div class="case-grid">
+            <article class="case-card">
+              <div class="case-card-image">
+                <img src="./images/project-thumbnails/energy_efficiency.png" alt="Energy monitoring dashboard" />
+              </div>
+              <div class="case-card-content">
+                <p class="project-tag">Enterprise mobile product</p>
+                <h3>my eWatch Online</h3>
+                <p class="project-description">A production Flutter application for factory energy monitoring and sustainability reporting, built for 100+ SME clients.</p>
+                <ul class="case-list">
+                  <li><strong>Problem:</strong> Operations teams lacked a mobile-first way to monitor energy, cost, and carbon metrics.</li>
+                  <li><strong>Solution:</strong> Developed a robust cross-platform app with real-time dashboards, cost trend analysis, and AI-powered telemetry insights.</li>
+                  <li><strong>Impact:</strong> Delivered a 40% faster dashboard load time and 35% crash reduction through pagination, background isolates, and parallel API calls.</li>
+                </ul>
+                <div class="case-meta"><span>Flutter</span><span>BLoC</span><span>Firebase</span><span>REST APIs</span></div>
+                <div class="case-actions">
+                  <a href="https://play.google.com/store/apps/details?id=com.secure.myewatchonline&hl=en_IN" target="_blank" rel="noreferrer">View listing</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="case-card">
+              <div class="case-card-image">
+                <img src="./images/project-thumbnails/adaptricity_screenshot.png" alt="Adaptricity smart grid analytics dashboard" />
+              </div>
+              <div class="case-card-content">
+                <p class="project-tag">Smart grid analytics</p>
+                <h3>Adaptricity</h3>
+                <p class="project-description">Refactored the Angular frontend for a grid analytics platform used by global distribution network operators.</p>
+                <ul class="case-list">
+                  <li><strong>Problem:</strong> High-latency analytics dashboards slowed decision-making for grid operators.</li>
+                  <li><strong>Solution:</strong> Optimized Angular 16 components, tuned MongoDB aggregation queries, and improved frontend responsiveness.</li>
+                  <li><strong>Impact:</strong> Reduced data retrieval latency by 30–40% and enhanced the dashboard experience for a global utility audience.</li>
+                </ul>
+                <div class="case-meta"><span>Angular 16</span><span>TypeScript</span><span>MongoDB</span><span>REST APIs</span></div>
+                <div class="case-actions">
+                  <a href="https://www.adaptricity.com" target="_blank" rel="noreferrer">View platform</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="case-card">
+              <div class="case-card-image">
+                <img src="./images/project-thumbnails/articles_app.png" alt="Articles mobile app" />
+              </div>
+              <div class="case-card-content">
+                <p class="project-tag">Flutter product</p>
+                <h3>Articles App</h3>
+                <p class="project-description">A mobile content application showcasing Flutter UI, navigation, and performance across article feeds and reading flows.</p>
+                <ul class="case-list">
+                  <li><strong>Problem:</strong> Need for a clean, responsive reading experience on mobile.</li>
+                  <li><strong>Solution:</strong> Built a Flutter app with intuitive navigation, adaptive layouts, and fast load behavior.</li>
+                  <li><strong>Impact:</strong> Demonstrated practical Flutter architecture and app polish for mobile users.</li>
+                </ul>
+                <div class="case-meta"><span>Flutter</span><span>Dart</span><span>GitHub</span></div>
+                <div class="case-actions">
+                  <a href="https://github.com/PranjalG/flutter_articles_app" target="_blank" rel="noreferrer">View code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="experience" class="section section-dark reveal-on-scroll">
+          <div class="section-header">
+            <p class="section-label">Experience</p>
+            <h2>Professional impact through product ownership, performance optimization, and team leadership.</h2>
+          </div>
+          <div class="experience-timeline">
+            <div class="timeline-entry">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">Jul 2023 – Present</span>
+                <h3>Senior Software Developer — Secure Meters Ltd</h3>
+                <p>Led the architecture and delivery of my eWatch Online, a production mobile platform for energy monitoring and operational reporting.</p>
+                <ul class="experience-list">
+                  <li>Built a scalable Flutter application with BLoC state management, modular feature delivery, and testable code structure.</li>
+                  <li>Implemented real-time dashboards and AI-powered telemetry insights for 100+ SME clients.</li>
+                  <li>Created automated PDF report generation for daily, load survey, and monthly shift reports.</li>
+                  <li>Managed full release cycles for Play Store and App Store with CI/CD, signing, and versioning.</li>
+                </ul>
+                <div class="timeline-pill">Flutter · BLoC · Firebase · REST APIs · CI/CD</div>
+              </div>
+            </div>
+            <div class="timeline-entry">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">Jul 2023 – Present</span>
+                <h3>Adaptricity Smart Grid Analytics</h3>
+                <p>Refactored the frontend for a smart grid analytics platform used by distribution network operators across Europe and Asia.</p>
+                <ul class="experience-list">
+                  <li>Optimized Angular 16 dashboard components and frontend query flows for high-volume grid analytics.</li>
+                  <li>Improved MongoDB aggregation and API responsiveness, reducing latency by 30–40%.</li>
+                  <li>Enhanced dashboard interactivity and performance for enterprise users working with large data sets.</li>
+                </ul>
+                <div class="timeline-pill">Angular 16 · TypeScript · MongoDB · REST APIs</div>
+              </div>
+            </div>
+            <div class="timeline-entry">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">Jul 2023 – Present</span>
+                <h3>Internal Reporting Systems</h3>
+                <p>Built an internal .NET reporting dashboard to streamline engineering project data and automated documentation.</p>
+                <ul class="experience-list">
+                  <li>Designed a full-stack MVC system with C#, .NET 8, and PostgreSQL.</li>
+                  <li>Automated periodic PDF report generation for project status, test cases, and issue tracking.</li>
+                  <li>Delivered a data-driven workflow for fast visibility across engineering teams.</li>
+                </ul>
+                <div class="timeline-pill">C# · .NET 8 · MVC · PostgreSQL</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="achievements" class="section reveal-on-scroll">
+          <div class="section-header">
+            <p class="section-label">Achievements</p>
+            <h2>Impact metrics from the products and systems I own.</h2>
+          </div>
+          <div class="achievements-grid">
+            <div class="achievement-card">
+              <p class="achievement-value">100+</p>
+              <p class="achievement-title">SME clients served</p>
+              <p>Delivered energy monitoring and analytics solutions to a broad portfolio of manufacturing customers.</p>
+            </div>
+            <div class="achievement-card">
+              <p class="achievement-value">40%</p>
+              <p class="achievement-title">Faster dashboard load time</p>
+              <p>Improved performance with pagination, isolates, and parallel API processing.</p>
+            </div>
+            <div class="achievement-card">
+              <p class="achievement-value">35%</p>
+              <p class="achievement-title">Crash reduction</p>
+              <p>Enhanced stability and error handling in production mobile applications.</p>
+            </div>
+            <div class="achievement-card">
+              <p class="achievement-value">30–40%</p>
+              <p class="achievement-title">Query latency reduction</p>
+              <p>Optimized analytics dashboards for a global grid platform with faster backend responses.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="beyond" class="section section-dark reveal-on-scroll">
+          <div class="section-header">
+            <p class="section-label">Beyond Development</p>
+            <h2>How I build, learn, and solve problems beyond the codebase.</h2>
+          </div>
+          <div class="beyond-grid">
+            <article class="beyond-card">
+              <p class="beyond-tag">Writing</p>
+              <h3>Medium and product storytelling</h3>
+              <p>Share long-form technical writing and product thinking that connects engineering work to business outcomes.</p>
+              <a href="https://medium.com/@pranjalgaur" target="_blank" rel="noreferrer">View Medium</a>
+            </article>
+            <article class="beyond-card">
+              <p class="beyond-tag">Design</p>
+              <h3>UI / UX explorations</h3>
+              <p>Demonstrate polished interface work and interaction design through crafted visual concepts.</p>
+              <a href="https://dribbble.com/PranjalG" target="_blank" rel="noreferrer">View Dribbble</a>
+            </article>
+            <article class="beyond-card">
+              <p class="beyond-tag">Problem Solving</p>
+              <h3>Technical assessments</h3>
+              <p>Practice algorithmic thinking and challenge-based problem solving through competitive coding profiles.</p>
+              <a href="https://www.hackerrank.com/pranjalgaur" target="_blank" rel="noreferrer">View HackerRank</a>
+            </article>
+            <article class="beyond-card">
+              <p class="beyond-tag">Learning</p>
+              <h3>Continuous growth</h3>
+              <p>Invest in certifications, workshops, and hands-on product experiments to stay ahead in mobile and cloud engineering.</p>
+              <a href="https://www.linkedin.com/in/pranjal-gaur-3b5213205/" target="_blank" rel="noreferrer">See LinkedIn</a>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="section reveal-on-scroll">
+          <div class="section-header">
+            <p class="section-label">Contact</p>
+            <h2>Ready to collaborate on your next mobile product?</h2>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-panel glass-panel">
+              <p class="contact-copy">Send a note with the project scope, stack, or timeline, and I’ll reply within 24 hours.</p>
+              <div class="contact-links">
+                <a href="mailto:gaurpranjal236@gmail.com" class="btn btn-primary">Email me</a>
+                <a href="https://github.com/PranjalG" target="_blank" rel="noreferrer" class="social-link"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/pranjal-gaur-3b5213205/" target="_blank" rel="noreferrer" class="social-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+              </div>
+            </div>
+            <form class="contact-form glass-panel" aria-label="Contact form">
+              <label>
+                <span>Name</span>
+                <input name="name" type="text" placeholder="Your name" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input name="email" type="email" placeholder="you@example.com" required />
+              </label>
+              <label>
+                <span>Message</span>
+                <textarea name="message" rows="5" placeholder="Tell me about the project" required></textarea>
+              </label>
+              <button type="submit" class="btn btn-primary">Send message</button>
+              <p class="contact-note">This form opens an email composer with your message.</p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer reveal-on-scroll">
+        <p>© 2026 Pranjal Gaur — Flutter developer & mobile app engineer.</p>
+      </footer>
+    </div>
     <script src="./projects.js"></script>
   </body>
 </html>
