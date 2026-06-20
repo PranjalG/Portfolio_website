@@ -1,7 +1,27 @@
-# Portfolio Website
+# Personal Portfolio Website
 
-A modernized Flutter developer portfolio for Pranjal Gaur.
+A modern portfolio website built to showcase my professional experience, technical skills, projects, blogs, and achievements.
 
-This portfolio showcases mobile app development, full-stack experience, and published insights. It features a premium dark theme, responsive sections, smooth reveal animations, and accessible navigation.
+## Features
+
+- Responsive Design
+- Project Showcase
+- Technical Blog Section
+- Contact Form
+- Resume Download
+- Smooth Animations
+- Mobile Friendly
+
+## Sections
+
+- Home
+- About Me
+- Skills
+- Experience
+- Projects
+- Blogs
+- Contact
+
+## Have a look
 
 Live site: https://pranjalg.github.io/Portfolio_website/
