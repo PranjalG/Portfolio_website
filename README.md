@@ -1,8 +1,18 @@
 # Pranjal Gaur — portfolio
 
-Static site for a senior software engineer working in Flutter, Dart, and applied AI. GitHub Pages serves this repository from the root:
+Static site for a senior software engineer working in Flutter, Dart, and applied AI.
 
-https://pranjalg.github.io/Portfolio_website/
+This branch, `cursor/github-pages-redesign-6188`, is the new design to publish. The previous site remains on `master`.
+
+To make this the only site on GitHub Pages:
+
+1. Open the repository on GitHub.
+2. Go to Settings → Pages.
+3. Under "Build and deployment", choose "Deploy from a branch".
+4. Set the branch to `cursor/github-pages-redesign-6188` and the folder to `/ (root)`.
+5. Save.
+
+The public URL stays https://pranjalg.github.io/Portfolio_website/. After the next Pages build, that URL serves this design only. `master` is no longer what visitors see, and it is still in the repository if you need the old files.
 
 ## Stack
 
