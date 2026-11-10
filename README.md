@@ -16,7 +16,7 @@ The public URL stays https://pranjalg.github.io/Portfolio_website/. After the ne
 
 ## Stack
 
-HTML, CSS, and a few small scripts. Design tokens live in `css/tokens.css`. There is no framework, no backend, and no build step.
+HTML, CSS, and a few small scripts. Design tokens live in `css/tokens.css`. There is no framework and no backend. The hero motion uses GSAP, ScrollTrigger, and Lenis.
 
 Space Grotesk and Inter are self-hosted Latin subsets (SIL Open Font License, via Google Fonts).
 

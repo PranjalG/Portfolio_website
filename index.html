@@ -32,6 +32,9 @@
     <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="css/tokens.css" />
     <link rel="stylesheet" href="css/site.css" />
+    <script defer src="vendor/gsap.min.js"></script>
+    <script defer src="vendor/ScrollTrigger.min.js"></script>
+    <script defer src="vendor/lenis.min.js"></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -93,28 +96,59 @@
 
     <main id="content">
       <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-glow" data-hero-glow aria-hidden="true"></div>
+        <svg class="hero-curve" viewBox="0 0 1200 480" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="load-stroke" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#E64600" stop-opacity="0" />
+              <stop offset="18%" stop-color="#E64600" stop-opacity="0.9" />
+              <stop offset="100%" stop-color="#E64600" stop-opacity="0.2" />
+            </linearGradient>
+          </defs>
+          <path class="hero-curve-glow" data-load-glow fill="none" stroke="#E64600" stroke-width="14" vector-effect="non-scaling-stroke" />
+          <path class="hero-curve-line" data-load-curve fill="none" stroke="url(#load-stroke)" stroke-width="2" vector-effect="non-scaling-stroke" />
+        </svg>
+        <div class="hero-grain" aria-hidden="true"></div>
         <div class="shell hero-grid">
           <div class="hero-copy">
-            <div class="eyebrow d1">
+            <div class="eyebrow">
               <p class="badge">Open to remote</p>
               <p class="meta-pill">Kota, Rajasthan, India</p>
             </div>
             <h1 id="hero-title">
-              <span class="hero-name d2">Pranjal Gaur</span>
-              <span class="hero-line d3">Energy monitoring, in Flutter.</span>
-              <span class="hero-line d4">Applied AI, with citations.</span>
+              <span class="hero-name">Pranjal Gaur</span>
+              <span class="hero-line">
+                <span class="sr-only">Energy monitoring, in Flutter.</span>
+                <span class="line-visual" data-split>Energy monitoring, in Flutter.</span>
+                <button type="button" class="cite-mark" aria-expanded="false" aria-controls="cite-ewatch" aria-label="Source 1, my eWatch online">[1]</button>
+              </span>
+              <span class="hero-line">
+                <span class="sr-only">Applied AI, with citations.</span>
+                <span class="line-visual" data-split>Applied AI, with citations.</span>
+                <button type="button" class="cite-mark" aria-expanded="false" aria-controls="cite-gyanai" aria-label="Source 2, GyanAI">[2]</button>
+              </span>
             </h1>
-            <p class="hero-role d5">Senior Software Engineer, Flutter and Applied AI</p>
-            <p class="hero-value d5">
+            <p class="hero-role">Senior Software Engineer, Flutter and Applied AI</p>
+            <p class="hero-value">
               Enterprise energy apps in Flutter and Dart, plus applied AI that answers with citations.
             </p>
-            <div class="hero-actions d6">
+            <div class="hero-actions">
               <a class="btn btn-primary" href="#work" data-magnetic>View work</a>
               <a class="btn" href="public/resume.pdf" download="Pranjal-Gaur-Resume.pdf">Download resume</a>
             </div>
           </div>
+          <div id="cite-ewatch" class="cite-pop" popover="auto" role="note">
+            <p class="cite-kicker">Source 1</p>
+            <p class="cite-title">my eWatch online</p>
+            <p>Enterprise energy monitoring app at Secure Meters Ltd., built in Flutter and Dart. Includes the Flutter 3.27 to 3.44 migration.</p>
+          </div>
+          <div id="cite-gyanai" class="cite-pop" popover="auto" role="note">
+            <p class="cite-kicker">Source 2</p>
+            <p class="cite-title">GyanAI</p>
+            <p>Built solo. Gemini embeddings and Supabase pgvector, with citation-backed answers. Silver medal at Agentic Premier League, Udaipur.</p>
+          </div>
 
-          <div class="device-wrap d6">
+          <div class="device-wrap">
             <div class="device" aria-hidden="true">
               <div class="device-hardware">
                 <div class="device-speaker"></div>
@@ -180,17 +214,12 @@
           <div class="reveal">
             <p class="section-label">Selected work</p>
             <h2 id="work-title">Energy apps, a knowledge platform, a rental search.</h2>
-            <p class="section-intro">Placeholder means that part has not been written yet.</p>
           </div>
           <div class="work-grid">
             <article class="case case-lead reveal" id="commissioning">
               <p class="case-kicker">01 · my eWatch online</p>
               <h3>Meter commissioning</h3>
               <dl class="case-fields">
-                <div>
-                  <dt>Problem</dt>
-                  <dd><span class="placeholder-label">Placeholder</span> Not stated yet.</dd>
-                </div>
                 <div>
                   <dt>What was built</dt>
                   <dd>A meter commissioning flow driven by device responses.</dd>
@@ -203,10 +232,6 @@
                       <li>Dart</li>
                     </ul>
                   </dd>
-                </div>
-                <div>
-                  <dt>Outcome</dt>
-                  <dd><span class="placeholder-label">Placeholder</span> Not stated yet.</dd>
                 </div>
               </dl>
               <details>
@@ -229,10 +254,6 @@
               <h3>Solar monitoring for PM-KUSUM</h3>
               <dl class="case-fields">
                 <div>
-                  <dt>Problem</dt>
-                  <dd><span class="placeholder-label">Placeholder</span> Not stated yet.</dd>
-                </div>
-                <div>
                   <dt>What was built</dt>
                   <dd>
                     Single-site and multi-site dashboards, generation versus earnings graphs, alerts, and role-based routing on a shared login, for EPC customers under PM-KUSUM.
@@ -247,10 +268,6 @@
                     </ul>
                   </dd>
                 </div>
-                <div>
-                  <dt>Outcome</dt>
-                  <dd><span class="placeholder-label">Placeholder</span> Not stated yet.</dd>
-                </div>
               </dl>
               <details>
                 <summary>
@@ -260,7 +277,7 @@
                 <div class="case-more">
                   <div class="case-more-inner">
                     <p>
-                      A solar monitoring app in the same Secure Meters role. The confirmed surface is dashboards for one site and many sites, generation versus earnings, alerts, and role-based routing from a shared login.
+                      A solar monitoring app in the same Secure Meters role: dashboards for one site and many sites, generation versus earnings, alerts, and role-based routing from a shared login.
                     </p>
                   </div>
                 </div>
@@ -271,10 +288,6 @@
               <p class="case-kicker">03 · Built solo</p>
               <h3>GyanAI</h3>
               <dl class="case-fields">
-                <div>
-                  <dt>Problem</dt>
-                  <dd><span class="placeholder-label">Placeholder</span> Not stated yet.</dd>
-                </div>
                 <div>
                   <dt>What was built</dt>
                   <dd>An enterprise RAG knowledge platform with citation-backed answers.</dd>
@@ -314,10 +327,6 @@
               <h3>Ghar-Ki-Khoj</h3>
               <dl class="case-fields">
                 <div>
-                  <dt>Problem</dt>
-                  <dd><span class="placeholder-label">Placeholder</span> Not stated yet.</dd>
-                </div>
-                <div>
                   <dt>What was built</dt>
                   <dd>A MEAN-stack rental property search platform.</dd>
                 </div>
@@ -329,10 +338,6 @@
                     </ul>
                   </dd>
                 </div>
-                <div>
-                  <dt>Outcome</dt>
-                  <dd><span class="placeholder-label">Placeholder</span> Not stated yet.</dd>
-                </div>
               </dl>
               <details>
                 <summary>
@@ -341,9 +346,7 @@
                 </summary>
                 <div class="case-more">
                   <div class="case-more-inner">
-                    <p>
-                      Confirmed only as a MEAN-stack platform for searching rental properties. Features, a live link, and a result are not stated.
-                    </p>
+                    <p>A MEAN-stack platform for searching rental properties.</p>
                   </div>
                 </div>
               </details>
@@ -357,7 +360,6 @@
           <div class="reveal">
             <p class="section-label">Experience</p>
             <h2 id="experience-title">Secure Meters, then the degree.</h2>
-            <p class="section-intro">Dates are not listed.</p>
           </div>
           <ol class="timeline reveal">
             <li>
@@ -448,9 +450,6 @@
               </p>
               <p>B.E. Electrical and Electronics, MBM University Jodhpur, 8.38 CGPA.</p>
             </div>
-            <figure class="photo-placeholder reveal">
-              <figcaption>Photo placeholder. A portrait has not been published here.</figcaption>
-            </figure>
           </div>
         </div>
       </section>
