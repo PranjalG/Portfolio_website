@@ -1,9 +1,7 @@
 # Resume PDF
 
-The site links to this folder for the resume download.
+`resume.pdf` in this folder is the file the site downloads.
 
-1. Export the real resume as a PDF.
-2. Save it here as `resume.pdf` (the full path is `public/resume.pdf`).
-3. Commit and redeploy. The Download resume and Resume controls already point at that file.
+The header Resume button and the hero Download resume button both link here. Browsers save the file as `Pranjal-Gaur-Resume.pdf`.
 
-Do not commit a placeholder PDF. Until `resume.pdf` exists, the homepage says the file has not been added yet.
+To change the resume, replace `public/resume.pdf` and redeploy.

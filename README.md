@@ -12,7 +12,7 @@ Space Grotesk and Inter are self-hosted Latin subsets (SIL Open Font License, vi
 
 ## Resume
 
-Download buttons point at `public/resume.pdf`. That file is not in the repo yet. See `public/README.md` for where to put it. The homepage says so until the PDF is added.
+The Resume and Download resume buttons serve `public/resume.pdf`. The browser saves it as `Pranjal-Gaur-Resume.pdf`. Replace that file to update the download.
 
 ## Local preview
 
