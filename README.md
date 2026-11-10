@@ -1,27 +1,23 @@
-# Personal Portfolio Website
+# Pranjal Gaur — portfolio
 
-A modern portfolio website built to showcase my professional experience, technical skills, projects, blogs, and achievements.
+Static site for a senior software engineer working in Flutter, Dart, and applied AI. GitHub Pages serves this repository from the root:
 
-## Features
+https://pranjalg.github.io/Portfolio_website/
 
-- Responsive Design
-- Project Showcase
-- Technical Blog Section
-- Contact Form
-- Resume Download
-- Smooth Animations
-- Mobile Friendly
+## Stack
 
-## Sections
+HTML, CSS, and a few small scripts. Design tokens live in `css/tokens.css`. There is no framework, no backend, and no build step.
 
-- Home
-- About Me
-- Skills
-- Experience
-- Projects
-- Blogs
-- Contact
+Space Grotesk and Inter are self-hosted Latin subsets (SIL Open Font License, via Google Fonts).
 
-## Have a look
+## Resume
 
-Live site: https://pranjalg.github.io/Portfolio_website/
+The Resume and Download resume buttons serve `public/resume.pdf`. The browser saves it as `Pranjal-Gaur-Resume.pdf`. Replace that file to update the download.
+
+## Local preview
+
+```bash
+python3 -m http.server 4173
+```
+
+Open http://127.0.0.1:4173/
