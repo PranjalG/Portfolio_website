@@ -728,6 +728,79 @@ p {
   transition: transform 180ms var(--ease), border-color 180ms var(--ease);
 }
 
+.case-media {
+  margin: calc(var(--space-3) * -1) calc(var(--space-3) * -1) 0;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.case-media img,
+.prior-grid img,
+.portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.case-media img {
+  display: block;
+  aspect-ratio: 16 / 9;
+  height: auto;
+}
+
+.prior {
+  margin-top: var(--space-6);
+}
+
+.prior h3 {
+  margin: 0 0 var(--space-2);
+  font-size: var(--step-1);
+  letter-spacing: -0.04em;
+}
+
+.prior-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.prior-grid a {
+  display: grid;
+  gap: 8px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.prior-grid img {
+  aspect-ratio: 16 / 10;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.prior-grid span {
+  font-size: var(--step--1);
+  font-weight: 600;
+}
+
+.portrait {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+
+.portrait img {
+  display: block;
+  aspect-ratio: 4 / 5;
+  object-position: center 18%;
+}
+
 .case:hover {
   transform: translateY(-4px);
   border-color: var(--accent);
@@ -1204,7 +1277,7 @@ p {
     grid-template-columns: 1fr 1fr;
   }
 
-  .about-grid:has(.photo-placeholder) {
+  .about-grid:has(.portrait) {
     grid-template-columns: 1.3fr 0.7fr;
     align-items: stretch;
   }
@@ -1276,4 +1349,8 @@ p {
   .skill-web { grid-area: web; }
   .skill-tool { grid-area: tool; }
   .skill-ai { grid-area: ai; }
+
+  .prior-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
