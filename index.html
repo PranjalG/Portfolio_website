@@ -2,518 +2,512 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Pranjal Gaur | Flutter Developer & Mobile Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pranjal Gaur — Senior Software Engineer, Flutter and Applied AI</title>
     <meta
       name="description"
-      content="Pranjal Gaur is a Flutter developer and mobile engineer building modern cross-platform apps with BLoC, PostgreSQL, REST APIs, and production-ready integrations."
+      content="Pranjal Gaur is a senior software engineer in Kota, Rajasthan, open to remote work. Flutter and Dart mobile apps for energy monitoring, and GyanAI, a citation-backed RAG platform."
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:title" content="Pranjal Gaur | Flutter Developer" />
+    <meta name="theme-color" content="#F6F4EF" />
+    <meta name="color-scheme" content="light" />
+    <link rel="canonical" href="https://pranjalg.github.io/Portfolio_website/" />
+    <meta property="og:title" content="Pranjal Gaur — Senior Software Engineer, Flutter and Applied AI" />
     <meta
       property="og:description"
-      content="Modern portfolio for a Flutter developer specializing in mobile apps, full-stack integrations, and production-ready experiences."
+      content="Flutter and Dart mobile apps for energy monitoring, and applied AI that answers with citations. Open to remote."
     />
     <meta property="og:type" content="website" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Eczar:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
+    <meta property="og:url" content="https://pranjalg.github.io/Portfolio_website/" />
+    <meta property="og:image" content="https://pranjalg.github.io/Portfolio_website/images/og.png" />
+    <meta property="og:image:alt" content="Pranjal Gaur, senior software engineer. Warm off-white card with an orange rule." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pranjal Gaur — Senior Software Engineer, Flutter and Applied AI" />
+    <meta
+      name="twitter:description"
+      content="Flutter and Dart mobile apps for energy monitoring, and applied AI that answers with citations."
     />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./styles.css" />
+    <meta name="twitter:image" content="https://pranjalg.github.io/Portfolio_website/images/og.png" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Pranjal Gaur",
+        "jobTitle": "Senior Software Engineer",
+        "email": "mailto:gaurpranjal236@gmail.com",
+        "url": "https://pranjalg.github.io/Portfolio_website/",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kota",
+          "addressRegion": "Rajasthan",
+          "addressCountry": "IN"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "MBM University Jodhpur"
+        },
+        "sameAs": [
+          "https://linkedin.com/in/pranjalgaur2",
+          "https://github.com/PranjalG",
+          "https://leetcode.com/u/PranjalGaur"
+        ],
+        "knowsAbout": ["Flutter", "Dart", "Applied AI"]
+      }
+    </script>
+    <script>document.documentElement.classList.add("js");</script>
   </head>
   <body>
-    <div class="page-shell">
-      <header class="site-header reveal-on-scroll">
-        <div class="header-inner">
-          <a class="brand" href="#home">PRANJAL GAUR</a>
-          <nav aria-label="Primary navigation" class="nav-links">
-            <a href="#about">About</a>
-            <a href="#stack">Stack</a>
-            <a href="#projects">Projects</a>
-            <a href="#case-studies">Case Studies</a>
-            <a href="#experience">Experience</a>
-            <a href="#beyond">Beyond</a>
-            <a href="#contact">Contact</a>
-          </nav>
+    <a class="skip" href="#content">Skip to content</a>
+    <header class="site-header" data-header data-open="false">
+      <div class="header-bar">
+        <a class="brand" href="#top" aria-label="Pranjal Gaur, home">
+          <span class="monogram" aria-hidden="true">PG</span>
+          <span class="brand-name">Pranjal Gaur</span>
+        </a>
+        <nav id="site-menu" class="site-nav" data-menu aria-label="Sections">
+          <a href="#work">Work</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn-small" href="public/resume.pdf" download>Resume</a>
+          <a class="btn btn-small btn-primary" href="#contact">Contact</a>
+          <button
+            class="menu-toggle"
+            type="button"
+            data-menu-toggle
+            aria-expanded="false"
+            aria-controls="site-menu"
+          >
+            <span class="menu-open-label">Menu</span>
+            <span class="menu-close-label">Close</span>
+          </button>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <main>
-        <section id="home" class="hero section-bleed reveal-on-scroll">
-          <div class="hero-background">
-            <canvas id="hero-canvas" aria-hidden="true"></canvas>
-            <div class="hero-aurora"></div>
+    <main id="content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow d1">
+              <p class="badge">Open to remote</p>
+              <p class="meta-pill">Kota, Rajasthan, India</p>
+            </div>
+            <h1 id="hero-title">
+              <span class="hero-name d2">Pranjal Gaur</span>
+              <span class="hero-line d3">Energy monitoring, in Flutter.</span>
+              <span class="hero-line d4">Applied AI, with citations.</span>
+            </h1>
+            <p class="hero-role d5">Senior Software Engineer, Flutter and Applied AI</p>
+            <p class="hero-value d5">
+              Enterprise energy apps in Flutter and Dart, plus applied AI that answers with citations.
+            </p>
+            <div class="hero-actions d6">
+              <a class="btn btn-primary" href="#work" data-magnetic>View work</a>
+              <a class="btn" href="public/resume.pdf" download>Download resume</a>
+            </div>
+            <p class="resume-note" id="resume-note" tabindex="-1">
+              Resume file not added yet. Pranjal: save the PDF as <code>public/resume.pdf</code>. The download buttons already use that path.
+            </p>
           </div>
 
-          <div class="hero-grid">
-            <div class="hero-copy">
-              <div class="hero-eyebrow">Flutter Engineer · Product-minded Mobile Apps</div>
-              <h1>Building enterprise-grade mobile products with Flutter, BLoC, PostgreSQL, and scalable API architecture.</h1>
-              <p>
-                I lead product-focused Flutter delivery for connected enterprise workflows, turning complex energy and industrial data into polished, reliable mobile experiences.
-              </p>
-              <div class="hero-actions">
-                <a class="btn btn-primary" href="#case-studies">View case studies</a>
-                <a class="btn btn-outline" href="#contact">Let’s connect</a>
-              </div>
-              <div class="hero-stats">
-                <div class="hero-stat">
-                  <span>100+</span>
-                  <p>SME clients served</p>
+          <div class="device-wrap d6">
+            <div class="device" aria-hidden="true">
+              <div class="device-hardware">
+                <div class="device-speaker"></div>
+                <div class="device-screens">
+                  <div class="screen">
+                    <p class="screen-kicker">Commissioning</p>
+                    <p class="screen-title">Device responses</p>
+                    <ol class="steps">
+                      <li><i></i> Response in</li>
+                      <li><i></i> Next step</li>
+                      <li><i></i> Flow continues</li>
+                    </ol>
+                    <p class="screen-note">Commissioning driven by device responses.</p>
+                  </div>
+                  <div class="screen">
+                    <p class="screen-kicker">PM-KUSUM</p>
+                    <p class="screen-title">Sites and alerts</p>
+                    <div class="charts">
+                      <div class="chart-block">
+                        <div class="bars" aria-hidden="true">
+                          <span class="b1"></span>
+                          <span class="b2"></span>
+                          <span class="b3"></span>
+                        </div>
+                        <p class="chart-label">Generation</p>
+                      </div>
+                      <div class="chart-block">
+                        <div class="bars earnings" aria-hidden="true">
+                          <span class="b4"></span>
+                          <span class="b5"></span>
+                          <span class="b6"></span>
+                        </div>
+                        <p class="chart-label">Earnings</p>
+                      </div>
+                    </div>
+                    <div class="screen-row">
+                      <span class="chip">One site</span>
+                      <span class="chip">Many sites</span>
+                      <span class="cite">Alert</span>
+                    </div>
+                  </div>
+                  <div class="screen">
+                    <p class="screen-kicker">GyanAI</p>
+                    <p class="screen-title">Cited answer</p>
+                    <div class="answer" aria-hidden="true">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <p class="cite">Citation</p>
+                    <p class="screen-note">Gemini embeddings and Supabase pgvector.</p>
+                  </div>
                 </div>
-                <div class="hero-stat">
-                  <span>40%</span>
-                  <p>faster dashboard load time</p>
-                </div>
-                <div class="hero-stat">
-                  <span>35%</span>
-                  <p>crash reduction</p>
-                </div>
-              </div>
-              <div class="hero-badges">
-                <span>Flutter</span>
-                <span>Dart</span>
-                <span>PostgreSQL</span>
-                <span>REST APIs</span>
-                <span>Firebase</span>
-                <span>Android / iOS</span>
               </div>
             </div>
-
-            <div class="hero-card">
-              <div class="hero-card-glow"></div>
-              <div class="hero-profile-card">
-                <img
-                  src="./images/profile_image.jpg"
-                  alt="Pranjal Gaur"
-                  class="profile-image"
-                />
-                <div class="profile-copy">
-                  <p class="profile-role">Mobile App Engineer</p>
-                  <h2>Pranjal Gaur</h2>
-                  <p class="profile-meta">Flutter · BLoC · Full Stack · APIs · PostgreSQL</p>
-                  <span class="availability-pill">Open to new opportunities</span>
-                </div>
-              </div>
-            </div>
+            <p class="device-caption">Stylized screens. Not product screenshots, and not employer logos.</p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section id="about" class="section reveal-on-scroll">
-          <div class="section-header">
-            <p class="section-label">About Me</p>
-            <h2>Focused on delivering mobile products that feel fast, intuitive, and reliable.</h2>
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="shell">
+          <div class="reveal">
+            <p class="section-label">Selected work</p>
+            <h2 id="work-title">Energy apps, a knowledge platform, a rental search.</h2>
+            <p class="section-intro">Placeholder means that part has not been written yet.</p>
           </div>
-          <div class="section-grid">
-            <div class="glass-panel about-card">
-              <p>
-                I’m a Flutter developer with hands-on experience building production mobile apps, integrating REST APIs, and architecting connected systems. I enjoy translating product goals into polished experiences that work smoothly on Android and iOS.
-              </p>
-              <p>
-                My approach combines modern UI design, state-managed Flutter architecture, and backend-ready data flows. I have strong exposure to PostgreSQL, cloud-connected services, and feature delivery for real users.
-              </p>
-            </div>
-
-            <div class="timeline-summary">
-              <div class="timeline-item">
-                <span class="timeline-dot"></span>
+          <div class="work-grid">
+            <article class="case case-lead reveal" id="commissioning">
+              <p class="case-kicker">01 · my eWatch online</p>
+              <h3>Meter commissioning</h3>
+              <dl class="case-fields">
                 <div>
-                  <p class="timeline-title">Software Developer</p>
-                  <p class="timeline-meta">Secure Meters Ltd — Flutter & mobile app delivery</p>
+                  <dt>Problem</dt>
+                  <dd><span class="placeholder-label">Placeholder</span> Not stated yet.</dd>
                 </div>
-              </div>
-              <div class="timeline-item">
-                <span class="timeline-dot"></span>
                 <div>
-                  <p class="timeline-title">Mobile-first product engineering</p>
-                  <p class="timeline-meta">APIs, PostgreSQL, cloud integrations, and app lifecycle optimization.</p>
+                  <dt>What was built</dt>
+                  <dd>A meter commissioning flow driven by device responses.</dd>
                 </div>
-              </div>
-              <div class="timeline-item">
-                <span class="timeline-dot"></span>
                 <div>
-                  <p class="timeline-title">Learning & leadership</p>
-                  <p class="timeline-meta">MBM University, AI club, and cross-functional product collaboration.</p>
+                  <dt>Tech</dt>
+                  <dd>
+                    <ul class="chips">
+                      <li>Flutter</li>
+                      <li>Dart</li>
+                    </ul>
+                  </dd>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="stack" class="section section-dark reveal-on-scroll">
-          <div class="section-header">
-            <p class="section-label">Tech Stack</p>
-            <h2>Core technologies I use every day.</h2>
-          </div>
-          <div class="stack-grid">
-            <div class="stack-card"><span class="stack-name">Flutter</span><p>Cross-platform UI, animation, architecture.</p></div>
-            <div class="stack-card"><span class="stack-name">Dart</span><p>Strong typed code, async flows, clean architecture.</p></div>
-            <div class="stack-card"><span class="stack-name">Firebase</span><p>Realtime syncing, auth, cloud functions.</p></div>
-            <div class="stack-card"><span class="stack-name">PostgreSQL</span><p>Relational data models and production databases.</p></div>
-            <div class="stack-card"><span class="stack-name">REST APIs</span><p>API integration, request flow, error handling.</p></div>
-            <div class="stack-card"><span class="stack-name">Git</span><p>Version control, collaboration, branch workflows.</p></div>
-            <div class="stack-card"><span class="stack-name">Android</span><p>Platform optimizations and device integration.</p></div>
-            <div class="stack-card"><span class="stack-name">iOS</span><p>Native feel, performance, and distribution readiness.</p></div>
-          </div>
-        </section>
-
-        <section id="projects" class="section reveal-on-scroll">
-          <div class="section-header">
-            <p class="section-label">Featured Projects</p>
-            <h2>Projects designed for clarity, performance, and polished interaction.</h2>
-          </div>
-          <div class="projects-grid">
-            <article class="project-card">
-              <img src="./images/project-thumbnails/box-office.png" alt="Box Office Application screenshot" />
-              <div class="project-copy">
-                <p class="project-tag">Web app</p>
-                <h3>Box Office Application</h3>
-                <p class="project-description">A responsive entertainment dashboard with movie discovery, search, and live data features.</p>
-                <div class="project-meta">
-                  <span>JavaScript</span><span>UX</span>
+                <div>
+                  <dt>Outcome</dt>
+                  <dd><span class="placeholder-label">Placeholder</span> Not stated yet.</dd>
                 </div>
-                <div class="project-actions">
-                  <a href="https://pranjalg.github.io/Box-office/#/" target="_blank" rel="noreferrer">Live demo</a>
+              </dl>
+              <details>
+                <summary>
+                  <span class="when-closed">Read case</span>
+                  <span class="when-open">Close</span>
+                </summary>
+                <div class="case-more">
+                  <div class="case-more-inner">
+                    <p>
+                      Part of my eWatch online, an enterprise energy monitoring mobile app, in the current role at Secure Meters Ltd. The flow follows device responses. Flutter and Dart come from the app’s Flutter 3.27 to 3.44 migration.
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </details>
             </article>
 
-            <article class="project-card">
-              <img src="./images/project-thumbnails/tic-tac-toe.png" alt="Tic Tac Toe Game" />
-              <div class="project-copy">
-                <p class="project-tag">Interactive game</p>
-                <h3>Tic Tac Toe</h3>
-                <p class="project-description">A classic game with polished controls and a refined play experience on web devices.</p>
-                <div class="project-meta">
-                  <span>HTML</span><span>CSS</span>
+            <article class="case reveal" id="solar">
+              <p class="case-kicker">02 · Secure Meters Ltd.</p>
+              <h3>Solar monitoring for PM-KUSUM</h3>
+              <dl class="case-fields">
+                <div>
+                  <dt>Problem</dt>
+                  <dd><span class="placeholder-label">Placeholder</span> Not stated yet.</dd>
                 </div>
-                <div class="project-actions">
-                  <a href="https://tictac-game-blue-beam.surge.sh/" target="_blank" rel="noreferrer">Live demo</a>
+                <div>
+                  <dt>What was built</dt>
+                  <dd>
+                    Single-site and multi-site dashboards, generation versus earnings graphs, alerts, and role-based routing on a shared login, for EPC customers under PM-KUSUM.
+                  </dd>
                 </div>
-              </div>
+                <div>
+                  <dt>Tech</dt>
+                  <dd>
+                    <ul class="chips">
+                      <li>Flutter</li>
+                      <li>Dart</li>
+                    </ul>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Outcome</dt>
+                  <dd><span class="placeholder-label">Placeholder</span> Not stated yet.</dd>
+                </div>
+              </dl>
+              <details>
+                <summary>
+                  <span class="when-closed">Read case</span>
+                  <span class="when-open">Close</span>
+                </summary>
+                <div class="case-more">
+                  <div class="case-more-inner">
+                    <p>
+                      A solar monitoring app in the same Secure Meters role. The confirmed surface is dashboards for one site and many sites, generation versus earnings, alerts, and role-based routing from a shared login.
+                    </p>
+                  </div>
+                </div>
+              </details>
             </article>
 
-            <article class="project-card">
-              <img src="./images/project-thumbnails/drumkit.png" alt="Drum Kit Webpage" />
-              <div class="project-copy">
-                <p class="project-tag">Creative landing page</p>
-                <h3>Drum Kit Interface</h3>
-                <p class="project-description">A musical experience with interactive controls and animated audio feedback.</p>
-                <div class="project-meta">
-                  <span>JavaScript</span><span>Animation</span>
+            <article class="case reveal" id="gyanai">
+              <p class="case-kicker">03 · Built solo</p>
+              <h3>GyanAI</h3>
+              <dl class="case-fields">
+                <div>
+                  <dt>Problem</dt>
+                  <dd><span class="placeholder-label">Placeholder</span> Not stated yet.</dd>
                 </div>
-                <div class="project-actions">
-                  <a href="https://pranjalg.github.io/Drum-kit/" target="_blank" rel="noreferrer">Live demo</a>
+                <div>
+                  <dt>What was built</dt>
+                  <dd>An enterprise RAG knowledge platform with citation-backed answers.</dd>
                 </div>
-              </div>
+                <div>
+                  <dt>Tech</dt>
+                  <dd>
+                    <ul class="chips">
+                      <li>Gemini embeddings</li>
+                      <li>Supabase pgvector</li>
+                      <li>RAG</li>
+                    </ul>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Outcome</dt>
+                  <dd>Silver medal at Agentic Premier League, Udaipur.</dd>
+                </div>
+              </dl>
+              <details>
+                <summary>
+                  <span class="when-closed">Read case</span>
+                  <span class="when-open">Close</span>
+                </summary>
+                <div class="case-more">
+                  <div class="case-more-inner">
+                    <p>
+                      Built solo. Gemini embeddings and Supabase pgvector support answers that carry citations. The confirmed result is a silver medal at Agentic Premier League, Udaipur.
+                    </p>
+                  </div>
+                </div>
+              </details>
             </article>
 
-            <article class="project-card">
-              <img src="./images/project-thumbnails/tindog.png" alt="TinDog Website Design" />
-              <div class="project-copy">
-                <p class="project-tag">Brand concept</p>
-                <h3>TinDog Landing Page</h3>
-                <p class="project-description">A clean web concept for a pet-focused brand with strong visual rhythm.</p>
-                <div class="project-meta">
-                  <span>Design</span><span>Responsive</span>
+            <article class="case reveal" id="ghar-ki-khoj">
+              <p class="case-kicker">04 · Rental search</p>
+              <h3>Ghar-Ki-Khoj</h3>
+              <dl class="case-fields">
+                <div>
+                  <dt>Problem</dt>
+                  <dd><span class="placeholder-label">Placeholder</span> Not stated yet.</dd>
                 </div>
-                <div class="project-actions">
-                  <a href="https://pranjalg.github.io/TindDog-website/" target="_blank" rel="noreferrer">Live demo</a>
+                <div>
+                  <dt>What was built</dt>
+                  <dd>A MEAN-stack rental property search platform.</dd>
                 </div>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <img src="./images/project-thumbnails/finance-app-design.png" alt="Finance Application Design" />
-              <div class="project-copy">
-                <p class="project-tag">UI design</p>
-                <h3>Finance App Concept</h3>
-                <p class="project-description">A mobile-first finance interface with attention to data clarity and hierarchy.</p>
-                <div class="project-meta">
-                  <span>Figma</span><span>Design</span>
+                <div>
+                  <dt>Tech</dt>
+                  <dd>
+                    <ul class="chips">
+                      <li>MEAN</li>
+                    </ul>
+                  </dd>
                 </div>
-                <div class="project-actions">
-                  <a href="https://dribbble.com/PranjalG" target="_blank" rel="noreferrer">View work</a>
+                <div>
+                  <dt>Outcome</dt>
+                  <dd><span class="placeholder-label">Placeholder</span> Not stated yet.</dd>
                 </div>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <img src="./images/project-thumbnails/articles_app.png" alt="Articles Mobile App" />
-              <div class="project-copy">
-                <p class="project-tag">Mobile app</p>
-                <h3>Articles App</h3>
-                <p class="project-description">A Flutter project with dynamic article listings, navigation, and mobile presentation.</p>
-                <div class="project-meta">
-                  <span>Flutter</span><span>GitHub</span>
+              </dl>
+              <details>
+                <summary>
+                  <span class="when-closed">Read case</span>
+                  <span class="when-open">Close</span>
+                </summary>
+                <div class="case-more">
+                  <div class="case-more-inner">
+                    <p>
+                      Confirmed only as a MEAN-stack platform for searching rental properties. Features, a live link, and a result are not stated.
+                    </p>
+                  </div>
                 </div>
-                <div class="project-actions">
-                  <a href="https://github.com/PranjalG/flutter_articles_app" target="_blank" rel="noreferrer">View code</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <img src="./images/project-thumbnails/energy_efficiency.png" alt="Energy Efficiency Mobile App" />
-              <div class="project-copy">
-                <p class="project-tag">Mobile dashboard</p>
-                <h3>Energy Efficiency App</h3>
-                <p class="project-description">A concept for energy monitoring, insights, and climate-aware dashboard experiences.</p>
-                <div class="project-meta">
-                  <span>Flutter</span><span>UX</span>
-                </div>
-                <div class="project-actions">
-                  <a href="https://play.google.com/store/apps/details?id=com.secure.myewatchonline&hl=en_IN" target="_blank" rel="noreferrer">View listing</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <img src="./images/project-thumbnails/healthcare.png" alt="Healthcare Mobile App" />
-              <div class="project-copy">
-                <p class="project-tag">Healthcare solution</p>
-                <h3>Healthcare App</h3>
-                <p class="project-description">A mobile patient-care design with clear data flows and simplified navigation.</p>
-                <div class="project-meta">
-                  <span>Flutter</span><span>GitHub</span>
-                </div>
-                <div class="project-actions">
-                  <a href="https://github.com/PranjalG/quick_med_mobile_app" target="_blank" rel="noreferrer">View code</a>
-                </div>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section id="case-studies" class="section reveal-on-scroll">
-          <div class="section-header">
-            <p class="section-label">Case Studies</p>
-            <h2>Ownership-led product work across mobile, analytics, and enterprise tooling.</h2>
-          </div>
-          <div class="case-grid">
-            <article class="case-card">
-              <div class="case-card-image">
-                <img src="./images/project-thumbnails/energy_efficiency.png" alt="Energy monitoring dashboard" />
-              </div>
-              <div class="case-card-content">
-                <p class="project-tag">Enterprise mobile product</p>
-                <h3>my eWatch Online</h3>
-                <p class="project-description">A production Flutter application for factory energy monitoring and sustainability reporting, built for 100+ SME clients.</p>
-                <ul class="case-list">
-                  <li><strong>Problem:</strong> Operations teams lacked a mobile-first way to monitor energy, cost, and carbon metrics.</li>
-                  <li><strong>Solution:</strong> Developed a robust cross-platform app with real-time dashboards, cost trend analysis, and AI-powered telemetry insights.</li>
-                  <li><strong>Impact:</strong> Delivered a 40% faster dashboard load time and 35% crash reduction through pagination, background isolates, and parallel API calls.</li>
-                </ul>
-                <div class="case-meta"><span>Flutter</span><span>BLoC</span><span>Firebase</span><span>REST APIs</span></div>
-                <div class="case-actions">
-                  <a href="https://play.google.com/store/apps/details?id=com.secure.myewatchonline&hl=en_IN" target="_blank" rel="noreferrer">View listing</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="case-card">
-              <div class="case-card-image">
-                <img src="./images/project-thumbnails/adaptricity_screenshot.png" alt="Adaptricity smart grid analytics dashboard" />
-              </div>
-              <div class="case-card-content">
-                <p class="project-tag">Smart grid analytics</p>
-                <h3>Adaptricity</h3>
-                <p class="project-description">Refactored the Angular frontend for a grid analytics platform used by global distribution network operators.</p>
-                <ul class="case-list">
-                  <li><strong>Problem:</strong> High-latency analytics dashboards slowed decision-making for grid operators.</li>
-                  <li><strong>Solution:</strong> Optimized Angular 16 components, tuned MongoDB aggregation queries, and improved frontend responsiveness.</li>
-                  <li><strong>Impact:</strong> Reduced data retrieval latency by 30–40% and enhanced the dashboard experience for a global utility audience.</li>
-                </ul>
-                <div class="case-meta"><span>Angular 16</span><span>TypeScript</span><span>MongoDB</span><span>REST APIs</span></div>
-                <div class="case-actions">
-                  <a href="https://www.adaptricity.com" target="_blank" rel="noreferrer">View platform</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="case-card">
-              <div class="case-card-image">
-                <img src="./images/project-thumbnails/articles_app.png" alt="Articles mobile app" />
-              </div>
-              <div class="case-card-content">
-                <p class="project-tag">Flutter product</p>
-                <h3>Articles App</h3>
-                <p class="project-description">A mobile content application showcasing Flutter UI, navigation, and performance across article feeds and reading flows.</p>
-                <ul class="case-list">
-                  <li><strong>Problem:</strong> Need for a clean, responsive reading experience on mobile.</li>
-                  <li><strong>Solution:</strong> Built a Flutter app with intuitive navigation, adaptive layouts, and fast load behavior.</li>
-                  <li><strong>Impact:</strong> Demonstrated practical Flutter architecture and app polish for mobile users.</li>
-                </ul>
-                <div class="case-meta"><span>Flutter</span><span>Dart</span><span>GitHub</span></div>
-                <div class="case-actions">
-                  <a href="https://github.com/PranjalG/flutter_articles_app" target="_blank" rel="noreferrer">View code</a>
-                </div>
-              </div>
+              </details>
             </article>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section id="experience" class="section section-dark reveal-on-scroll">
-          <div class="section-header">
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="shell">
+          <div class="reveal">
             <p class="section-label">Experience</p>
-            <h2>Professional impact through product ownership, performance optimization, and team leadership.</h2>
+            <h2 id="experience-title">Secure Meters, then the degree.</h2>
+            <p class="section-intro">Dates are not listed.</p>
           </div>
-          <div class="experience-timeline">
-            <div class="timeline-entry">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <span class="timeline-date">Jul 2023 – Present</span>
-                <h3>Senior Software Developer — Secure Meters Ltd</h3>
-                <p>Led the architecture and delivery of my eWatch Online, a production mobile platform for energy monitoring and operational reporting.</p>
-                <ul class="experience-list">
-                  <li>Built a scalable Flutter application with BLoC state management, modular feature delivery, and testable code structure.</li>
-                  <li>Implemented real-time dashboards and AI-powered telemetry insights for 100+ SME clients.</li>
-                  <li>Created automated PDF report generation for daily, load survey, and monthly shift reports.</li>
-                  <li>Managed full release cycles for Play Store and App Store with CI/CD, signing, and versioning.</li>
-                </ul>
-                <div class="timeline-pill">Flutter · BLoC · Firebase · REST APIs · CI/CD</div>
-              </div>
-            </div>
-            <div class="timeline-entry">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <span class="timeline-date">Jul 2023 – Present</span>
-                <h3>Adaptricity Smart Grid Analytics</h3>
-                <p>Refactored the frontend for a smart grid analytics platform used by distribution network operators across Europe and Asia.</p>
-                <ul class="experience-list">
-                  <li>Optimized Angular 16 dashboard components and frontend query flows for high-volume grid analytics.</li>
-                  <li>Improved MongoDB aggregation and API responsiveness, reducing latency by 30–40%.</li>
-                  <li>Enhanced dashboard interactivity and performance for enterprise users working with large data sets.</li>
-                </ul>
-                <div class="timeline-pill">Angular 16 · TypeScript · MongoDB · REST APIs</div>
-              </div>
-            </div>
-            <div class="timeline-entry">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <span class="timeline-date">Jul 2023 – Present</span>
-                <h3>Internal Reporting Systems</h3>
-                <p>Built an internal .NET reporting dashboard to streamline engineering project data and automated documentation.</p>
-                <ul class="experience-list">
-                  <li>Designed a full-stack MVC system with C#, .NET 8, and PostgreSQL.</li>
-                  <li>Automated periodic PDF report generation for project status, test cases, and issue tracking.</li>
-                  <li>Delivered a data-driven workflow for fast visibility across engineering teams.</li>
-                </ul>
-                <div class="timeline-pill">C# · .NET 8 · MVC · PostgreSQL</div>
-              </div>
-            </div>
-          </div>
-        </section>
+          <ol class="timeline reveal">
+            <li>
+              <h3>Senior Software Engineer</h3>
+              <p class="when">Secure Meters Ltd. · Current role</p>
+              <ul class="impact">
+                <li>Building my eWatch online, an enterprise energy monitoring mobile app.</li>
+                <li>Built a survey flow with a parent-child BLoC.</li>
+                <li>Built a meter commissioning flow driven by device responses.</li>
+                <li>
+                  Reports feature: PDF downloads of daily, monthly, shift-wise, and metering-location-wise energy consumption.
+                </li>
+                <li>
+                  Solar monitoring app for EPC customers under PM-KUSUM, with single-site and multi-site dashboards, generation versus earnings graphs, alerts, and role-based routing on a shared login.
+                </li>
+                <li>
+                  Led the Flutter 3.27 to 3.44 migration, extending the app for large process industry customers, and mentored two junior developers.
+                </li>
+                <li>Refactored core modules with BLoC and Clean Architecture, cutting the crash rate by 35%.</li>
+              </ul>
+            </li>
+            <li>
+              <h3>B.E. Electrical and Electronics</h3>
+              <p class="when">MBM University Jodhpur · 8.38 CGPA</p>
+            </li>
+          </ol>
+        </div>
+      </section>
 
-        <section id="achievements" class="section reveal-on-scroll">
-          <div class="section-header">
-            <p class="section-label">Achievements</p>
-            <h2>Impact metrics from the products and systems I own.</h2>
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="shell">
+          <div class="reveal">
+            <p class="section-label">Skills</p>
+            <h2 id="skills-title">Only what the work implies.</h2>
           </div>
-          <div class="achievements-grid">
-            <div class="achievement-card">
-              <p class="achievement-value">100+</p>
-              <p class="achievement-title">SME clients served</p>
-              <p>Delivered energy monitoring and analytics solutions to a broad portfolio of manufacturing customers.</p>
-            </div>
-            <div class="achievement-card">
-              <p class="achievement-value">40%</p>
-              <p class="achievement-title">Faster dashboard load time</p>
-              <p>Improved performance with pagination, isolates, and parallel API processing.</p>
-            </div>
-            <div class="achievement-card">
-              <p class="achievement-value">35%</p>
-              <p class="achievement-title">Crash reduction</p>
-              <p>Enhanced stability and error handling in production mobile applications.</p>
-            </div>
-            <div class="achievement-card">
-              <p class="achievement-value">30–40%</p>
-              <p class="achievement-title">Query latency reduction</p>
-              <p>Optimized analytics dashboards for a global grid platform with faster backend responses.</p>
-            </div>
-          </div>
-        </section>
+          <ul class="skill-board">
+            <li class="skill skill-mobile reveal">
+              <h3>Mobile</h3>
+              <ul class="chips">
+                <li>Flutter</li>
+                <li>Dart</li>
+              </ul>
+            </li>
+            <li class="skill skill-arch reveal">
+              <h3>Architecture</h3>
+              <ul class="chips">
+                <li>BLoC</li>
+                <li>Clean Architecture</li>
+              </ul>
+            </li>
+            <li class="skill skill-web reveal">
+              <h3>Backend and Web</h3>
+              <ul class="chips">
+                <li>MEAN</li>
+              </ul>
+            </li>
+            <li class="skill skill-ai reveal">
+              <h3>AI</h3>
+              <ul class="chips">
+                <li>Gemini embeddings</li>
+                <li>Supabase pgvector</li>
+                <li>RAG</li>
+              </ul>
+            </li>
+            <li class="skill skill-tool reveal">
+              <h3>Tooling</h3>
+              <ul class="chips">
+                <li>PDF reports</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <section id="beyond" class="section section-dark reveal-on-scroll">
-          <div class="section-header">
-            <p class="section-label">Beyond Development</p>
-            <h2>How I build, learn, and solve problems beyond the codebase.</h2>
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="shell">
+          <div class="reveal">
+            <p class="section-label">About</p>
+            <h2 id="about-title">Based in Kota. Open to remote.</h2>
           </div>
-          <div class="beyond-grid">
-            <article class="beyond-card">
-              <p class="beyond-tag">Writing</p>
-              <h3>Medium and product storytelling</h3>
-              <p>Share long-form technical writing and product thinking that connects engineering work to business outcomes.</p>
-              <a href="https://medium.com/@gaurpranjal236" target="_blank" rel="noreferrer">View Medium</a>
-            </article>
-            <article class="beyond-card">
-              <p class="beyond-tag">Design</p>
-              <h3>UI / UX explorations</h3>
-              <p>Demonstrate polished interface work and interaction design through crafted visual concepts.</p>
-              <a href="https://dribbble.com/PranjalG" target="_blank" rel="noreferrer">View Dribbble</a>
-            </article>
-            <article class="beyond-card">
-              <p class="beyond-tag">Problem Solving</p>
-              <h3>Technical assessments</h3>
-              <p>Practice algorithmic thinking and challenge-based problem solving through competitive coding profiles.</p>
-              <a href="https://www.hackerrank.com/profile/gaurpranjal236" target="_blank" rel="noreferrer">View HackerRank</a>
-            </article>
-            <article class="beyond-card">
-              <p class="beyond-tag">Learning</p>
-              <h3>Continuous growth</h3>
-              <p>Invest in certifications, workshops, and hands-on product experiments to stay ahead in mobile and cloud engineering.</p>
-              <a href="https://www.linkedin.com/in/pranjal-gaur-3b5213205/" target="_blank" rel="noreferrer">See LinkedIn</a>
-            </article>
+          <div class="about-grid">
+            <div class="about-copy reveal">
+              <p>
+                I’m Pranjal Gaur, a senior software engineer in Kota, Rajasthan, India. I build Flutter and Dart mobile apps, with applied AI.
+              </p>
+              <p>
+                At Secure Meters Ltd. I work on my eWatch online, an enterprise energy monitoring app, and on a solar monitoring app for EPC customers under PM-KUSUM. On my own I built GyanAI, a knowledge platform that answers with citations.
+              </p>
+              <p>B.E. Electrical and Electronics, MBM University Jodhpur, 8.38 CGPA.</p>
+            </div>
+            <figure class="photo-placeholder reveal">
+              <figcaption>Photo placeholder. A portrait has not been published here.</figcaption>
+            </figure>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section id="contact" class="section reveal-on-scroll">
-          <div class="section-header">
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="shell">
+          <div class="contact-panel reveal">
             <p class="section-label">Contact</p>
-            <h2>Ready to collaborate on your next mobile product?</h2>
-          </div>
-          <div class="contact-grid">
-            <div class="contact-panel glass-panel">
-              <p class="contact-copy">Send a note with the project scope, stack, or timeline, and I’ll reply within 24 hours.</p>
-              <div class="contact-links">
-                <a href="mailto:gaurpranjal236@gmail.com" class="btn btn-primary">Email me</a>
-                <a href="https://github.com/PranjalG" target="_blank" rel="noreferrer" class="social-link"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://www.linkedin.com/in/pranjal-gaur-3b5213205/" target="_blank" rel="noreferrer" class="social-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
-              </div>
+            <h2 id="contact-title">Write to Pranjal.</h2>
+            <div class="email-row">
+              <a class="email-link" href="mailto:gaurpranjal236@gmail.com">gaurpranjal236@gmail.com</a>
+              <button class="btn" type="button" data-copy="gaurpranjal236@gmail.com">Copy email</button>
             </div>
-            <form class="contact-form glass-panel" aria-label="Contact form">
-              <label>
-                <span>Name</span>
-                <input name="name" type="text" placeholder="Your name" required />
-              </label>
-              <label>
-                <span>Email</span>
-                <input name="email" type="email" placeholder="you@example.com" required />
-              </label>
-              <label>
-                <span>Message</span>
-                <textarea name="message" rows="5" placeholder="Tell me about the project" required></textarea>
-              </label>
-              <button type="submit" class="btn btn-primary">Send message</button>
-              <p class="contact-note">This form opens an email composer with your message.</p>
-            </form>
+            <p class="copy-status" data-copy-status role="status" aria-live="polite"></p>
+            <ul class="social">
+              <li>
+                <a href="https://linkedin.com/in/pranjalgaur2" rel="me noopener noreferrer">
+                  <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
+                    <rect x="1" y="1" width="16" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                    <path d="M5 7.2v5.3M5 5.2v.1M8 12.5V7.2M8 9.6c.5-1.2 1.4-1.8 2.6-1.8 1.6 0 2.4 1 2.4 2.8v1.9" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                  </svg>
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/PranjalG" rel="me noopener noreferrer">
+                  <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
+                    <circle cx="9" cy="9" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                    <path d="M7 13.5v-1.2c-1.6.2-2-.7-2-.7-.3-.6-.7-.8-.7-.8-.6-.4 0-.4 0-.4.6 0 1 .6 1 .6.5.9 1.4.7 1.7.5M11 13.5v-1.6c0-.9.3-1.4.3-1.4.7-.9.2-1.5.2-1.5-.8-.1-1.6.5-1.6.5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                  </svg>
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a href="https://leetcode.com/u/PranjalGaur" rel="me noopener noreferrer">
+                  <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
+                    <path d="M6.5 5 3 9l3.5 4M11.5 5 15 9l-3.5 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  LeetCode
+                </a>
+              </li>
+            </ul>
+            <p class="closing">For Flutter, mobile, or applied AI roles, email me.</p>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
 
-      <footer class="site-footer reveal-on-scroll">
-        <p>© 2026 Pranjal Gaur — Flutter developer & mobile app engineer.</p>
-      </footer>
-    </div>
-    <script src="./projects.js"></script>
+    <footer class="site-footer">
+      <div class="shell">
+        <p>Pranjal Gaur · Kota, Rajasthan, India</p>
+        <p><a href="mailto:gaurpranjal236@gmail.com">gaurpranjal236@gmail.com</a></p>
+      </div>
+    </footer>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>
