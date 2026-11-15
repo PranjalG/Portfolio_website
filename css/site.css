@@ -801,6 +801,27 @@ p {
   object-position: center 18%;
 }
 
+.photo-pair {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.photo-pair figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+
+.photo-pair img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .case:hover {
   transform: translateY(-4px);
   border-color: var(--accent);
@@ -1280,6 +1301,10 @@ p {
   .about-grid:has(.portrait) {
     grid-template-columns: 1.3fr 0.7fr;
     align-items: stretch;
+  }
+
+  .photo-pair {
+    grid-template-columns: 1fr 1fr;
   }
 
   .about-grid {
