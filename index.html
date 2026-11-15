@@ -8,7 +8,10 @@
       name="description"
       content="Pranjal Gaur is a senior software engineer in Kota, Rajasthan, open to remote work. Flutter and Dart mobile apps for energy monitoring, and GyanAI, a citation-backed RAG platform."
     />
-    <meta name="theme-color" content="#F6F4EF" />
+    <meta name="theme-color" content="#FFF9D6" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <meta name="color-scheme" content="light" />
     <link rel="canonical" href="https://pranjalg.github.io/Portfolio_website/" />
     <meta property="og:title" content="Pranjal Gaur — Senior Software Engineer, Flutter and Applied AI" />
@@ -70,24 +73,24 @@
       <div class="header-bar">
         <a class="brand" href="#top" aria-label="Pranjal Gaur, home">
           <span class="monogram" aria-hidden="true">PG</span>
-          <span class="brand-name">Pranjal Gaur</span>
+          <span class="brand-lockup">
+            <span class="brand-row">
+              <span class="brand-name">Pranjal Gaur</span>
+              <span class="pronouns">she/her</span>
+            </span>
+            <span class="brand-tag">&lt;flutter &amp; applied-ai /&gt;</span>
+          </span>
         </a>
         <nav id="site-menu" class="site-nav" data-menu aria-label="Sections">
           <a href="#work">Work</a>
-          <a href="#skills">Stack</a>
+          <a href="#skills">Skills</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </nav>
         <div class="header-actions">
-          <a class="btn btn-small" href="public/resume.pdf" download="Pranjal-Gaur-Resume.pdf">Resume</a>
-          <a class="btn btn-small btn-primary" href="#contact"><span class="talk-long">Let’s talk</span><span class="talk-short">Talk</span></a>
-          <button
-            class="menu-toggle"
-            type="button"
-            data-menu-toggle
-            aria-expanded="false"
-            aria-controls="site-menu"
-          >
+          <a class="st-btn st-btn-ghost resume-label" href="public/resume.pdf" download="Pranjal-Gaur-Resume.pdf">Resume</a>
+          <a class="st-btn st-btn-sage" href="#contact">Say Hi</a>
+          <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">
             <span class="menu-open-label">Menu</span>
             <span class="menu-close-label">Close</span>
           </button>
@@ -95,417 +98,210 @@
       </div>
     </header>
 
-    <main id="content">
-      <section class="hero" id="top" aria-labelledby="hero-title">
-        <div class="shell hero-grid">
-          <div class="hero-copy">
-            <div class="eyebrow">
-              <p class="badge">Open to remote</p>
-            </div>
-            <h1 id="hero-title">
-              <span class="hero-name">Pranjal Gaur</span>
-              <span class="hero-line">
-                <span class="sr-only">Energy monitoring, in Flutter.</span>
-                <span class="line-visual" data-split>Energy monitoring, in Flutter.</span>
-                <button type="button" class="cite-mark" aria-expanded="false" aria-controls="cite-ewatch" aria-label="Source 1, my eWatch online">[1]</button>
-              </span>
-              <span class="hero-line">
-                <span class="sr-only">Applied AI, with citations.</span>
-                <span class="line-visual" data-split>Applied AI, with citations.</span>
-                <button type="button" class="cite-mark" aria-expanded="false" aria-controls="cite-gyanai" aria-label="Source 2, GyanAI">[2]</button>
-              </span>
-            </h1>
-            <p class="hero-role">Senior Software Engineer, Flutter and Applied AI</p>
-            <p class="hero-value">
-              Enterprise energy apps in Flutter and Dart, plus applied AI that answers with citations.
-            </p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#work" data-magnetic>View work</a>
-              <a class="btn" href="public/resume.pdf" download="Pranjal-Gaur-Resume.pdf">Download resume</a>
-            </div>
+    <main class="st-main" id="content">
+      <section class="hero-card" id="top" aria-labelledby="hero-title">
+        <div class="shader-wrap" data-shader-wrap>
+          <canvas data-shader aria-hidden="true"></canvas>
+        </div>
+        <div class="hero-top">
+          <div class="dots" aria-hidden="true">
+            <i></i><i></i><i></i>
+            <span class="path">~/pranjal-gaur/portfolio.dart</span>
           </div>
-          <div id="cite-ewatch" class="cite-pop" popover="auto" role="note">
-            <p class="cite-kicker">Source 1</p>
-            <p class="cite-title">my eWatch online</p>
-            <p>Enterprise energy monitoring app at Secure Meters Ltd., built in Flutter and Dart. Includes the Flutter 3.27 to 3.44 migration.</p>
+          <p class="status-pill"><span class="pulse" aria-hidden="true"></span> Open to remote</p>
+        </div>
+        <div class="hero-body">
+          <div class="pill-row">
+            <span class="pill pill-sage">&lt;flutter /&gt;</span>
+            <span class="pill pill-blush">[applied-ai]</span>
+            <span class="pill pill-blush">she/her</span>
+            <span class="pill pill-butter">8.38 CGPA</span>
+            <span class="pill pill-blush">Secure Meters Ltd.</span>
           </div>
-          <div id="cite-gyanai" class="cite-pop" popover="auto" role="note">
-            <p class="cite-kicker">Source 2</p>
-            <p class="cite-title">GyanAI</p>
-            <p>Built solo. Gemini embeddings and Supabase pgvector, with citation-backed answers. Silver medal at Agentic Premier League, Udaipur.</p>
+          <p class="hero-kicker">Pranjal Gaur</p>
+          <h1 id="hero-title">Energy monitoring, in Flutter.<br /><span class="wavy">Applied AI,</span> with citations.</h1>
+          <p class="hero-lead">Senior software engineer. Enterprise energy apps in Flutter and Dart, plus applied AI that answers with citations.</p>
+          <div class="hero-actions">
+            <a class="st-btn st-btn-sage" href="#work">View selected work</a>
+            <a class="st-btn st-btn-ghost" href="public/resume.pdf" download="Pranjal-Gaur-Resume.pdf">Download resume</a>
           </div>
-
+          <p class="hero-note"><i aria-hidden="true"></i> Open to Flutter, mobile, and applied AI roles.</p>
         </div>
       </section>
 
-      <section class="stat-strip" aria-label="Confirmed figures">
-        <ul class="shell">
-          <li>
-            <strong>8.38</strong>
-            <span>CGPA, MBM University Jodhpur</span>
-          </li>
-          <li>
-            <strong>3.27 → 3.44</strong>
-            <span>Flutter migration on my eWatch</span>
-          </li>
-          <li>
-            <strong>35%</strong>
-            <span>crash-rate cut after the BLoC refactor</span>
-          </li>
-          <li>
-            <strong>2</strong>
-            <span>junior developers mentored</span>
-          </li>
+      <section aria-label="Confirmed figures">
+        <ul class="stats">
+          <li class="stat"><em>Academics</em><strong>8.38</strong><span>CGPA, B.E. Electrical and Electronics</span></li>
+          <li class="stat"><em>Migration</em><strong>3.27 → 3.44</strong><span>Flutter upgrade on my eWatch</span></li>
+          <li class="stat"><em>Stability</em><strong>35%</strong><span>crash-rate cut after the BLoC refactor</span></li>
+          <li class="stat"><em>Mentoring</em><strong>2</strong><span>junior developers</span></li>
         </ul>
       </section>
 
-      <section class="section" id="work" aria-labelledby="work-title">
-        <div class="shell">
-          <div class="reveal">
-            <p class="section-label">Selected work</p>
+      <section id="work" aria-labelledby="work-title">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow-pill"><span class="dot" aria-hidden="true"></span> Selected work</p>
             <h2 id="work-title">Energy apps, a knowledge platform, a rental search.</h2>
           </div>
-          <div class="bento">
-            <article class="case case-lead case-wide reveal" id="commissioning">
-              <figure class="case-media">
-                <img
-                  src="images/display/energy.jpg"
-                  alt="Energy monitoring dashboards with cost, solar, and usage"
-                  width="1159"
-                  height="773"
-                />
-              </figure>
-              <p class="case-kicker">01 · my eWatch online</p>
-              <h3>Meter commissioning</h3>
-              <dl class="case-fields">
-                <div>
-                  <dt>What was built</dt>
-                  <dd>A meter commissioning flow driven by device responses.</dd>
+          <p>my eWatch online, a PM-KUSUM solar app, GyanAI, and Ghar-Ki-Khoj.</p>
+        </div>
+        <div class="stack">
+          <article class="project reveal" id="commissioning">
+            <div class="project-grid">
+              <div>
+                <div class="pill-row">
+                  <span class="pill pill-blush">Secure Meters Ltd.</span>
+                  <span class="pill pill-butter">my eWatch online</span>
                 </div>
-                <div>
-                  <dt>Tech</dt>
-                  <dd>
-                    <ul class="chips">
-                      <li>Flutter</li>
-                      <li>Dart</li>
-                    </ul>
-                  </dd>
-                </div>
-              </dl>
-              <details>
-                <summary>
-                  <span class="when-closed">Read case</span>
-                  <span class="when-open">Close</span>
-                </summary>
-                <div class="case-more">
-                  <div class="case-more-inner">
-                    <p>
-                      Part of my eWatch online, an enterprise energy monitoring mobile app, in the current role at Secure Meters Ltd. The flow follows device responses. Flutter and Dart come from the app’s Flutter 3.27 to 3.44 migration.
-                    </p>
-                  </div>
-                </div>
-              </details>
-            </article>
+                <h3>Meter commissioning</h3>
+                <p>Part of my eWatch online, an enterprise energy monitoring app. The commissioning flow follows device responses. Reports download daily, monthly, shift-wise, and metering-location-wise consumption as PDFs. Flutter and Dart come from the app’s 3.27 to 3.44 migration.</p>
+                <ul class="chips">
+                  <li class="hot">Flutter</li>
+                  <li>Dart</li>
+                  <li>BLoC</li>
+                  <li>Clean Architecture</li>
+                  <li>PDF reports</li>
+                </ul>
+              </div>
+              <div class="frame frame-wide">
+                <img src="images/display/energy.jpg" alt="Energy monitoring dashboards with cost, solar, and usage" width="1159" height="773" />
+              </div>
+            </div>
+          </article>
 
-            <article class="case case-wide reveal" id="gyanai">
-              <p class="case-kicker">02 · Built solo</p>
-              <h3>GyanAI</h3>
-              <dl class="case-fields">
-                <div>
-                  <dt>What was built</dt>
-                  <dd>An enterprise RAG knowledge platform with citation-backed answers.</dd>
-                </div>
-                <div>
-                  <dt>Tech</dt>
-                  <dd>
-                    <ul class="chips">
-                      <li>Gemini embeddings</li>
-                      <li>Supabase pgvector</li>
-                      <li>RAG</li>
-                    </ul>
-                  </dd>
-                </div>
-                <div>
-                  <dt>Outcome</dt>
-                  <dd>Silver medal at Agentic Premier League, Udaipur.</dd>
-                </div>
-              </dl>
-              <details>
-                <summary>
-                  <span class="when-closed">Read case</span>
-                  <span class="when-open">Close</span>
-                </summary>
-                <div class="case-more">
-                  <div class="case-more-inner">
-                    <p>
-                      Built solo. Gemini embeddings and Supabase pgvector support answers that carry citations. The confirmed result is a silver medal at Agentic Premier League, Udaipur.
-                    </p>
-                  </div>
-                </div>
-              </details>
-            </article>
-
-            <article class="case reveal" id="solar">
-              <p class="case-kicker">03 · Secure Meters Ltd.</p>
-              <h3>Solar monitoring for PM-KUSUM</h3>
-              <dl class="case-fields">
-                <div>
-                  <dt>What was built</dt>
-                  <dd>
-                    Single-site and multi-site dashboards, generation versus earnings graphs, alerts, and role-based routing on a shared login, for EPC customers under PM-KUSUM.
-                  </dd>
-                </div>
-                <div>
-                  <dt>Tech</dt>
-                  <dd>
-                    <ul class="chips">
-                      <li>Flutter</li>
-                      <li>Dart</li>
-                    </ul>
-                  </dd>
-                </div>
-              </dl>
-              <details>
-                <summary>
-                  <span class="when-closed">Read case</span>
-                  <span class="when-open">Close</span>
-                </summary>
-                <div class="case-more">
-                  <div class="case-more-inner">
-                    <p>
-                      A solar monitoring app in the same Secure Meters role: dashboards for one site and many sites, generation versus earnings, alerts, and role-based routing from a shared login.
-                    </p>
-                  </div>
-                </div>
-              </details>
-            </article>
-
-            <article class="case reveal" id="ghar-ki-khoj">
-              <p class="case-kicker">04 · Rental search</p>
-              <h3>Ghar-Ki-Khoj</h3>
-              <dl class="case-fields">
-                <div>
-                  <dt>What was built</dt>
-                  <dd>A MEAN-stack rental property search platform.</dd>
-                </div>
-                <div>
-                  <dt>Tech</dt>
-                  <dd>
-                    <ul class="chips">
-                      <li>MEAN</li>
-                    </ul>
-                  </dd>
-                </div>
-              </dl>
-              <details>
-                <summary>
-                  <span class="when-closed">Read case</span>
-                  <span class="when-open">Close</span>
-                </summary>
-                <div class="case-more">
-                  <div class="case-more-inner">
-                    <p>A MEAN-stack platform for searching rental properties.</p>
-                  </div>
-                </div>
-              </details>
-            </article>
-          </div>
-          <div class="prior reveal">
-            <h3>Earlier projects</h3>
-            <ul class="prior-grid">
-              <li>
-                <a href="https://pranjalg.github.io/Box-office/#/" rel="noopener noreferrer">
-                  <img loading="lazy" decoding="async" src="images/display/box-office.jpg" alt="Box Office application" width="900" height="466" />
-                  <span>Box Office</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://tictac-game-blue-beam.surge.sh/" rel="noopener noreferrer">
-                  <img loading="lazy" decoding="async" src="images/display/tic-tac-toe.jpg" alt="Tic Tac Toe game" width="900" height="460" />
-                  <span>Tic Tac Toe</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://pranjalg.github.io/Drum-kit/" rel="noopener noreferrer">
-                  <img loading="lazy" decoding="async" src="images/display/drumkit.jpg" alt="Drum kit page" width="900" height="439" />
-                  <span>Drum Kit</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://pranjalg.github.io/TindDog-website/" rel="noopener noreferrer">
-                  <img loading="lazy" decoding="async" src="images/display/tindog.jpg" alt="TinDog landing page" width="900" height="357" />
-                  <span>TinDog</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://dribbble.com/PranjalG" rel="noopener noreferrer">
-                  <img loading="lazy" decoding="async" src="images/display/finance.jpg" alt="Finance app design" width="900" height="565" />
-                  <span>Finance app</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/PranjalG/flutter_articles_app" rel="noopener noreferrer">
-                  <img loading="lazy" decoding="async" src="images/display/articles.jpg" alt="Articles mobile app" width="900" height="574" />
-                  <span>Articles app</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/PranjalG/quick_med_mobile_app" rel="noopener noreferrer">
-                  <img loading="lazy" decoding="async" src="images/display/healthcare.jpg" alt="Healthcare mobile app" width="900" height="595" />
-                  <span>Healthcare app</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.adaptricity.com" rel="noopener noreferrer">
-                  <img loading="lazy" decoding="async" src="images/display/adaptricity.jpg" alt="Adaptricity site" width="874" height="1400" />
-                  <span>Adaptricity</span>
-                </a>
-              </li>
+          <article class="project project-sage reveal" id="gyanai">
+            <div class="pill-row">
+              <span class="pill pill-sage">Built solo</span>
+              <span class="pill pill-blush">Silver medal, Agentic Premier League</span>
+            </div>
+            <h3>GyanAI</h3>
+            <p>An enterprise RAG knowledge platform. Gemini embeddings and Supabase pgvector support answers that carry citations, instead of a confident guess.</p>
+            <ul class="chips">
+              <li class="hot">Gemini embeddings</li>
+              <li class="hot">Supabase pgvector</li>
+              <li>RAG</li>
             </ul>
-          </div>
-        </div>
-      </section>
+          </article>
 
-      <section class="section" id="experience" aria-labelledby="experience-title">
-        <div class="shell">
-          <div class="reveal">
-            <p class="section-label">Experience</p>
-            <h2 id="experience-title">Secure Meters, then the degree.</h2>
-          </div>
-          <ol class="timeline reveal">
-            <li>
-              <h3>Senior Software Engineer</h3>
-              <p class="when">Secure Meters Ltd. · Current role</p>
-              <ul class="impact">
-                <li>Building my eWatch online, an enterprise energy monitoring mobile app.</li>
-                <li>Built a survey flow with a parent-child BLoC.</li>
-                <li>Built a meter commissioning flow driven by device responses.</li>
-                <li>
-                  Reports feature: PDF downloads of daily, monthly, shift-wise, and metering-location-wise energy consumption.
-                </li>
-                <li>
-                  Solar monitoring app for EPC customers under PM-KUSUM, with single-site and multi-site dashboards, generation versus earnings graphs, alerts, and role-based routing on a shared login.
-                </li>
-                <li>
-                  Led the Flutter 3.27 to 3.44 migration, extending the app for large process industry customers, and mentored two junior developers.
-                </li>
-                <li>Refactored core modules with BLoC and Clean Architecture, cutting the crash rate by 35%.</li>
-              </ul>
-            </li>
-            <li>
-              <h3>B.E. Electrical and Electronics</h3>
-              <p class="when">MBM University Jodhpur · 8.38 CGPA</p>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="section" id="skills" aria-labelledby="skills-title">
-        <div class="shell">
-          <div class="reveal">
-            <p class="section-label">Stack</p>
-            <h2 id="skills-title">Only what the work implies.</h2>
-          </div>
-          <ul class="skill-board">
-            <li class="skill skill-mobile reveal">
-              <h3>Mobile</h3>
+          <div class="half">
+            <article class="project reveal" id="solar">
+              <div>
+                <div class="pill-row">
+                  <span class="pill pill-butter">PM-KUSUM</span>
+                  <span class="pill">Secure Meters Ltd.</span>
+                </div>
+                <h3>Solar monitoring</h3>
+                <p>Single-site and multi-site dashboards, generation versus earnings, alerts, and role-based routing on a shared login, for EPC customers.</p>
+              </div>
               <ul class="chips">
-                <li>Flutter</li>
+                <li class="hot">Flutter</li>
                 <li>Dart</li>
               </ul>
-            </li>
-            <li class="skill skill-arch reveal">
-              <h3>Architecture</h3>
+            </article>
+            <article class="project reveal" id="ghar-ki-khoj">
+              <div>
+                <div class="pill-row">
+                  <span class="pill pill-blush">Rental search</span>
+                </div>
+                <h3>Ghar-Ki-Khoj</h3>
+                <p>A MEAN-stack platform for searching rental properties.</p>
+              </div>
               <ul class="chips">
-                <li>BLoC</li>
-                <li>Clean Architecture</li>
+                <li class="hot">MEAN</li>
               </ul>
-            </li>
-            <li class="skill skill-web reveal">
-              <h3>Backend and Web</h3>
-              <ul class="chips">
-                <li>MEAN</li>
-              </ul>
-            </li>
-            <li class="skill skill-ai reveal">
-              <h3>AI</h3>
-              <ul class="chips">
-                <li>Gemini embeddings</li>
-                <li>Supabase pgvector</li>
-                <li>RAG</li>
-              </ul>
-            </li>
-            <li class="skill skill-tool reveal">
-              <h3>Tooling</h3>
-              <ul class="chips">
-                <li>PDF reports</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section" id="about" aria-labelledby="about-title">
-        <div class="shell">
-          <div class="reveal">
-            <p class="section-label">About</p>
-            <h2 id="about-title">Hello World, then the meters.</h2>
+            </article>
           </div>
-          <div class="about-row">
-            <div class="about-copy reveal">
-              <p>
-                I’m Pranjal Gaur (she/her). Senior software engineer, open to remote. I still like a good Hello World. These days the pixels have a job, and the caffeine comes with them.
-              </p>
-              <p>
-                At Secure Meters Ltd. I build Flutter energy apps: my eWatch online, and a solar monitoring app for EPC customers under PM-KUSUM. No blink reminders. The apps watch meters. On my own I built GyanAI, which answers with citations instead of a confident guess.
-              </p>
-              <p>B.E. Electrical and Electronics, MBM University Jodhpur, 8.38 CGPA. The degree was electrical. The work is software, with some applied AI mixed in.</p>
+
+          <div class="prior reveal">
+            <div>
+              <p class="prior-label">Earlier projects</p>
+              <h3>More builds, same person.</h3>
             </div>
-            <div class="about-photos reveal">
-              <img loading="lazy" decoding="async" src="images/display/pranjal-arms-crossed.jpg" alt="Pranjal Gaur" width="900" height="1200" />
-              <img loading="lazy" decoding="async" src="images/display/pranjal-hands.jpg" alt="Pranjal Gaur" width="900" height="1200" />
+            <div class="prior-links">
+              <a href="https://pranjalg.github.io/Box-office/#/" rel="noopener noreferrer">Box Office</a>
+              <a href="https://tictac-game-blue-beam.surge.sh/" rel="noopener noreferrer">Tic Tac Toe</a>
+              <a href="https://pranjalg.github.io/Drum-kit/" rel="noopener noreferrer">Drum Kit</a>
+              <a href="https://pranjalg.github.io/TindDog-website/" rel="noopener noreferrer">TinDog</a>
+              <a href="https://github.com/PranjalG/flutter_articles_app" rel="noopener noreferrer">Articles</a>
+              <a href="https://github.com/PranjalG/quick_med_mobile_app" rel="noopener noreferrer">QuickMed</a>
+              <a href="https://github.com/PranjalG/money_finance_tracking_app" rel="noopener noreferrer">Expenses</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="contact" aria-labelledby="contact-title">
-        <div class="shell">
-          <div class="contact-panel contact-close reveal">
-            <p class="section-label">Contact</p>
+      <section id="skills" aria-labelledby="skills-title">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow-pill"><span class="dot" aria-hidden="true"></span> Stack</p>
+            <h2 id="skills-title">Only what the work implies.</h2>
+          </div>
+        </div>
+        <div class="skills">
+          <article class="skill reveal">
+            <div class="mark">App</div>
+            <h3>Mobile</h3>
+            <p>Flutter and Dart, including the 3.27 to 3.44 migration.</p>
+            <ul class="chips"><li class="hot">Flutter</li><li>Dart</li></ul>
+          </article>
+          <article class="skill skill-sage reveal">
+            <div class="mark">BLoC</div>
+            <h3>Architecture</h3>
+            <p>Parent-child BLoC, and a Clean Architecture refactor.</p>
+            <ul class="chips"><li>BLoC</li><li>Clean Architecture</li></ul>
+          </article>
+          <article class="skill skill-sage reveal">
+            <div class="mark">RAG</div>
+            <h3>Applied AI</h3>
+            <p>Citation-backed answers, not a confident guess.</p>
+            <ul class="chips"><li class="hot">Gemini embeddings</li><li class="hot">Supabase pgvector</li><li>RAG</li></ul>
+          </article>
+          <article class="skill reveal">
+            <div class="mark">Web</div>
+            <h3>Backend and web</h3>
+            <p>MEAN for Ghar-Ki-Khoj, and PDF reports on my eWatch.</p>
+            <ul class="chips"><li>MEAN</li><li>PDF reports</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" aria-labelledby="about-title">
+        <div class="about-card reveal">
+          <div class="about-grid">
+            <div class="about-copy">
+              <p class="eyebrow-pill"><span class="dot" aria-hidden="true"></span> About</p>
+              <h2 id="about-title">Hello World, then the meters.</h2>
+              <p>I’m Pranjal Gaur (she/her). Senior software engineer, open to remote. I still like a good Hello World. These days the pixels have a job, and the caffeine comes with them.</p>
+              <p>At Secure Meters Ltd. I build Flutter energy apps: my eWatch online, and a solar monitoring app for EPC customers under PM-KUSUM. No blink reminders. The apps watch meters. On my own I built GyanAI, which answers with citations instead of a confident guess.</p>
+              <p class="degree">B.E. Electrical and Electronics, MBM University Jodhpur, 8.38 CGPA. The degree was electrical. The work is software, with some applied AI mixed in.</p>
+            </div>
+            <div class="frame">
+              <div class="duo">
+                <img loading="lazy" decoding="async" src="images/display/pranjal-arms-crossed.jpg" alt="Pranjal Gaur" width="900" height="1200" />
+                <img loading="lazy" decoding="async" src="images/display/pranjal-hands.jpg" alt="Pranjal Gaur" width="900" height="1200" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-title">
+        <div class="contact-card reveal">
+          <div class="blob blob-a" aria-hidden="true"></div>
+          <div class="blob blob-b" aria-hidden="true"></div>
+          <div class="inner">
+            <p class="eyebrow-pill"><span class="dot" aria-hidden="true"></span> Contact</p>
             <h2 id="contact-title">Write to Pranjal.</h2>
             <div class="email-row">
               <a class="email-link" href="mailto:gaurpranjal236@gmail.com">gaurpranjal236@gmail.com</a>
-              <button class="btn" type="button" data-copy="gaurpranjal236@gmail.com">Copy email</button>
+              <button class="st-btn st-btn-ghost" type="button" data-copy="gaurpranjal236@gmail.com">Copy email</button>
             </div>
             <p class="copy-status" data-copy-status role="status" aria-live="polite"></p>
             <ul class="social">
-              <li>
-                <a href="https://linkedin.com/in/pranjalgaur2" rel="me noopener noreferrer">
-                  <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
-                    <rect x="1" y="1" width="16" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.4"/>
-                    <path d="M5 7.2v5.3M5 5.2v.1M8 12.5V7.2M8 9.6c.5-1.2 1.4-1.8 2.6-1.8 1.6 0 2.4 1 2.4 2.8v1.9" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-                  </svg>
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/PranjalG" rel="me noopener noreferrer">
-                  <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
-                    <circle cx="9" cy="9" r="7" fill="none" stroke="currentColor" stroke-width="1.4"/>
-                    <path d="M7 13.5v-1.2c-1.6.2-2-.7-2-.7-.3-.6-.7-.8-.7-.8-.6-.4 0-.4 0-.4.6 0 1 .6 1 .6.5.9 1.4.7 1.7.5M11 13.5v-1.6c0-.9.3-1.4.3-1.4.7-.9.2-1.5.2-1.5-.8-.1-1.6.5-1.6.5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-                  </svg>
-                  GitHub
-                </a>
-              </li>
-              <li>
-                <a href="https://leetcode.com/u/PranjalGaur" rel="me noopener noreferrer">
-                  <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
-                    <path d="M6.5 5 3 9l3.5 4M11.5 5 15 9l-3.5 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  LeetCode
-                </a>
-              </li>
+              <li><a href="https://linkedin.com/in/pranjalgaur2" rel="me noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://github.com/PranjalG" rel="me noopener noreferrer">GitHub</a></li>
+              <li><a href="https://leetcode.com/u/PranjalGaur" rel="me noopener noreferrer">LeetCode</a></li>
             </ul>
             <p class="closing">For Flutter, mobile, or applied AI roles, email me.</p>
           </div>
@@ -515,7 +311,7 @@
 
     <footer class="site-footer">
       <div class="shell">
-        <p>Pranjal Gaur · Kota, Rajasthan, India</p>
+        <p>Pranjal Gaur · Flutter and applied AI · Open to remote</p>
         <p><a href="mailto:gaurpranjal236@gmail.com">gaurpranjal236@gmail.com</a></p>
       </div>
     </footer>
