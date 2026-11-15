@@ -1,0 +1,195 @@
+/* Stitch-inspired cream layout. Orange stays the only vivid accent. */
+
+body {
+  background: #f4efe4;
+}
+
+.site-header {
+  border-top: 0;
+  background: rgba(244, 239, 228, 0.9);
+}
+
+.monogram {
+  display: none;
+}
+
+.brand-name {
+  display: inline;
+}
+
+.brand,
+.header-actions .btn {
+  white-space: nowrap;
+}
+
+.talk-short {
+  display: none;
+}
+
+.hero {
+  padding: 48px 0 8px;
+}
+
+.hero .hero-grid {
+  display: block;
+}
+
+.hero-copy {
+  max-width: none;
+}
+
+.hero-line {
+  font-size: clamp(2.35rem, 0.6rem + 4.4vw, 4.15rem);
+}
+
+.split-word {
+  white-space: nowrap;
+}
+
+.stat-strip {
+  padding: 28px 0 8px;
+}
+
+.stat-strip ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 16px;
+  margin: 0;
+  padding: 22px;
+  list-style: none;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: #fffdf8;
+  box-shadow: 0 10px 30px rgba(70, 40, 10, 0.04);
+}
+
+.stat-strip strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 1rem + 1.2vw, 2rem);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+}
+
+.stat-strip span {
+  display: block;
+  margin-top: 6px;
+  color: var(--quiet);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.bento {
+  display: grid;
+  gap: 16px;
+  margin-top: var(--space-5);
+}
+
+.case,
+.skill,
+.about-copy,
+.timeline,
+.contact-panel {
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(70, 40, 10, 0.04);
+}
+
+.case-lead .case-media img {
+  aspect-ratio: 2.15 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-row {
+  display: grid;
+  gap: 16px;
+  margin-top: var(--space-5);
+}
+
+.about-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.about-photos img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center 16%;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--surface);
+}
+
+.contact-close {
+  padding: clamp(28px, 5vw, 56px);
+  border-radius: 32px;
+  background:
+    radial-gradient(90% 80% at 100% 0%, rgba(230, 70, 0, 0.1), transparent 46%),
+    #fffdf8;
+}
+
+.contact-close h2 {
+  max-width: none;
+  font-size: clamp(2.2rem, 1.4rem + 3vw, 3.5rem);
+}
+
+.skill-board {
+  grid-template-columns: 1fr;
+  grid-template-areas: none;
+}
+
+.skill-board .skill {
+  grid-area: auto;
+}
+
+@media (max-width: 720px) {
+  .talk-long {
+    display: none;
+  }
+
+  .talk-short {
+    display: inline;
+  }
+
+  .header-actions {
+    gap: 6px;
+  }
+
+  .header-actions .btn-small {
+    padding-inline: 10px;
+  }
+}
+
+@media (min-width: 800px) {
+  .stat-strip ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .bento {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .case-wide {
+    grid-column: 1 / -1;
+  }
+
+  .skill-board {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .about-row {
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: stretch;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .case,
+  .btn {
+    transition: none;
+  }
+}

@@ -26,11 +26,12 @@ function splitLines() {
 
 export function initHero() {
   const hero = document.querySelector(".hero");
+  if (!hero) return;
   const curve = document.querySelector("[data-load-curve]");
   const glowPath = document.querySelector("[data-load-glow]");
-  if (!hero || !curve || !glowPath) return;
 
   const draw = (bend) => {
+    if (!curve || !glowPath) return;
     const path = curvePath(bend);
     curve.setAttribute("d", path);
     glowPath.setAttribute("d", path);
@@ -70,19 +71,22 @@ export function initHero() {
     delay: 0.12,
   });
 
-  const length = curve.getTotalLength();
-  gsap.set(curve, { strokeDasharray: length, strokeDashoffset: length });
-  gsap.to(curve, {
-    strokeDashoffset: 0,
-    ease: "none",
-    scrollTrigger: {
-      trigger: hero,
-      start: "top 85%",
-      end: "bottom 55%",
-      scrub: 0.6,
-    },
-  });
+  if (curve) {
+    const length = curve.getTotalLength();
+    gsap.set(curve, { strokeDasharray: length, strokeDashoffset: length });
+    gsap.to(curve, {
+      strokeDashoffset: 0,
+      ease: "none",
+      scrollTrigger: {
+        trigger: hero,
+        start: "top 85%",
+        end: "bottom 55%",
+        scrub: 0.6,
+      },
+    });
+  }
 
+  if (!curve || !glowPath) return;
   const glow = document.querySelector("[data-hero-glow]");
   const fine = window.matchMedia("(pointer: fine)").matches;
   if (!fine) return;
