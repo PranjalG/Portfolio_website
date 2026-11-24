@@ -1,6 +1,6 @@
 # Gaur. Pranjal Gaur.
 
-Senior Flutter engineer. She also builds NestJS backends and applied AI. GyanAI v2, a RAG project, is in progress. Open to remote.
+Senior Flutter engineer. Energy-monitoring apps, NestJS backends, and GyanAI, a RAG project that cites its sources. Open to remote.
 
 The site is the briefing. This repository is the file.
 
@@ -14,7 +14,7 @@ At Secure Meters Ltd. she builds **my eWatch online**, an energy-monitoring app.
 
 Under PM-KUSUM she shipped solar monitoring for EPC customers. One site or many. Generation against earnings. Alerts. Role-based routing on a shared login.
 
-She also builds NestJS backends. On her own time she built **GyanAI**, a citation-backed RAG project on Gemini embeddings and Supabase pgvector, and took silver at the Agentic Premier League, solo. **GyanAI v2** is in progress. Before that, **Ghar-Ki-Khoj**, a MEAN-stack search for rental homes.
+She also writes NestJS backends. On her own time she built **GyanAI**, a RAG project on Gemini embeddings and Supabase pgvector, and took silver at the Agentic Premier League, solo. The next version is marked in progress on the page. Before that, **Ghar-Ki-Khoj**, a MEAN-stack search for rental homes.
 
 The degree is electrical. B.E. in Electrical and Electronics, MBM University Jodhpur, 8.38 CGPA, with an AICTE Pragati Scholarship. The practice is software.
 
@@ -26,9 +26,9 @@ Butter, blush, and sage. A quiet WebGL wash behind the opening. A watercolor of 
 
 | Section | What it is for |
 | --- | --- |
-| Hero | Senior Flutter engineer, NestJS, and GyanAI v2 |
+| Hero | Senior Flutter engineer, energy monitoring, and RAG |
 | Figures | 8.38 CGPA, the Flutter upgrade, the crash-rate cut, two engineers mentored |
-| Work | GyanAI v2 (in progress), eWatch, PM-KUSUM solar, Ghar-Ki-Khoj, and earlier builds |
+| Work | GyanAI v2, eWatch, PM-KUSUM solar, Ghar-Ki-Khoj, and earlier builds |
 | Stack | Only the tools the work actually used |
 | About | The person, with the photographs |
 | Contact | A direct line |
