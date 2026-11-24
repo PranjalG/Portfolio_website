@@ -383,6 +383,7 @@ body {
 .badge-progress {
   display: inline-flex;
   align-items: center;
+  max-width: 100%;
   padding: 0.35rem 0.75rem;
   border: 1px solid var(--ink);
   border-radius: 999px;
@@ -391,6 +392,8 @@ body {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 700;
+  line-height: 1.4;
+  white-space: normal;
 }
 
 .hero-kicker {
@@ -616,6 +619,72 @@ body {
   color: var(--sage);
 }
 
+.project-kicker {
+  margin: 0.35rem 0 0;
+  color: var(--sage);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.project-points {
+  margin: 0.9rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.project-points li {
+  margin-top: 0.35rem;
+  line-height: 1.5;
+}
+
+.device-frame {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: min(220px, 100%);
+  margin-inline: auto;
+  aspect-ratio: 9 / 16;
+  max-height: 320px;
+  padding: 1rem;
+  border: 2px solid var(--ink);
+  border-radius: 1.75rem;
+  background: #fff;
+  color: rgba(46, 40, 39, 0.55);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  line-height: 1.4;
+  text-align: center;
+  position: relative;
+}
+
+.device-frame::before {
+  content: "";
+  position: absolute;
+  top: 0.65rem;
+  left: 50%;
+  width: 4rem;
+  height: 0.35rem;
+  border-radius: 999px;
+  background: rgba(46, 40, 39, 0.18);
+  transform: translateX(-50%);
+}
+
+.earlier-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.earlier-list li {
+  margin-top: 0.55rem;
+  line-height: 1.5;
+}
+
+.earlier-list a {
+  color: var(--ink);
+  font-weight: 700;
+}
+
 .frame {
   padding: 0.5rem;
   border: 2px solid var(--rose);
@@ -697,6 +766,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
+  margin-top: 1rem;
 }
 
 .prior-links a {

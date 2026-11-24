@@ -141,92 +141,132 @@
         <div class="section-head">
           <div>
             <p class="eyebrow-pill"><span class="dot" aria-hidden="true"></span> Selected work</p>
-            <h2 id="work-title">Energy monitoring, GyanAI, and a rental search.</h2>
+            <h2 id="work-title">GyanAI, energy monitoring, and two apps of my own.</h2>
           </div>
-          <p>my eWatch online, a PM-KUSUM solar app, GyanAI, and Ghar-Ki-Khoj.</p>
+          <p>A RAG platform, my eWatch online, PM-KUSUM solar, QuickMed, and two earlier builds.</p>
         </div>
         <div class="stack">
           <article class="project project-sage reveal" id="gyanai-v2">
-            <div class="pill-row">
-              <span class="badge-progress">In progress</span>
-              <span class="pill pill-sage">Built solo</span>
+            <div class="project-grid">
+              <div>
+                <div class="pill-row">
+                  <span class="badge-progress">Headline project · v2 in progress</span>
+                </div>
+                <h3>GyanAI v2</h3>
+                <p class="project-kicker">Multi-tenant RAG platform</p>
+                <p>A knowledge platform where teams upload documents and get answers with page-level citations. Silver medal at the Agentic Premier League (v1, solo build). v2 adds a NestJS API, organisations and roles, an async ingestion queue, hybrid search and a measured evaluation set.</p>
+                <!-- TODO: eval result placeholder. Do not publish an accuracy figure until it is measured. -->
+                <ul class="project-points">
+                  <li>Organisation-scoped data: one org never sees another's documents</li>
+                  <li>Uploads processed in a background queue with live status</li>
+                  <li>Hybrid retrieval (vector + keyword) with citations; quality tracked on a 25-question eval set</li>
+                </ul>
+                <ul class="chips">
+                  <li class="hot">Flutter</li>
+                  <li>BLoC</li>
+                  <li class="hot">NestJS</li>
+                  <li>PostgreSQL</li>
+                  <li>pgvector</li>
+                  <li>BullMQ</li>
+                  <li>Redis</li>
+                  <li>Gemini</li>
+                </ul>
+                <div class="prior-links">
+                  <a href="https://github.com/PranjalG/Gyan-AI" rel="noopener noreferrer">GitHub</a>
+                  <!-- TODO: add the live demo URL, then remove hidden from the link below. -->
+                  <a href="#" hidden>Live demo</a>
+                </div>
+              </div>
+              <!-- TODO: replace this frame with a GyanAI screenshot. No image file is in the repo. -->
+              <div class="device-frame" role="img" aria-label="Phone frame reserved for a GyanAI screenshot.">
+                <p>Screenshot not added yet</p>
+              </div>
             </div>
-            <h3>GyanAI v2</h3>
-            <p>GyanAI retrieves a passage and cites it. I built the first version solo with Gemini embeddings and Supabase pgvector. It took silver at the Agentic Premier League.</p>
-            <ul class="chips">
-              <li class="hot">RAG</li>
-              <li class="hot">Gemini embeddings</li>
-              <li>Supabase pgvector</li>
-            </ul>
           </article>
 
-          <article class="project reveal" id="commissioning">
+          <article class="project reveal" id="ewatch">
             <div class="project-grid">
               <div>
                 <div class="pill-row">
                   <span class="pill pill-blush">Secure Meters Ltd.</span>
-                  <span class="pill pill-butter">my eWatch online</span>
                 </div>
-                <h3>Meter commissioning</h3>
-                <p>I work on my eWatch online at Secure Meters Ltd. The commissioning flow follows device responses. Reports download daily, monthly, shift-wise, and metering-location-wise consumption as PDFs. I led the Flutter upgrade from 3.27 to 3.44.</p>
+                <h3>my eWatch online</h3>
+                <p class="project-kicker">Enterprise energy monitoring</p>
+                <p>Flutter app for field installers and enterprise customers: meter commissioning driven by live gateway responses, factory-wise charts, shift running hours, and PDF consumption reports.</p>
+                <ul class="project-points">
+                  <li>Dashboard load time cut ~40% with parallel API calls, pagination and background isolates</li>
+                  <li>Led Flutter 3.27.1 to 3.44.1 migration, validated with unit, widget and integration tests</li>
+                </ul>
                 <ul class="chips">
                   <li class="hot">Flutter</li>
                   <li>Dart</li>
                   <li>BLoC</li>
                   <li>Clean Architecture</li>
-                  <li>PDF reports</li>
+                  <li>REST</li>
+                  <li>Jenkins CI/CD</li>
                 </ul>
               </div>
               <div class="frame frame-wide">
-                <img src="images/display/energy.jpg" alt="Energy monitoring dashboards with cost, solar, and usage" width="1159" height="773" />
+                <img src="images/display/energy.jpg" alt="eWatch phone screens showing energy cost, running hours, load, and a daily cost chart." width="1159" height="730" />
               </div>
             </div>
           </article>
 
-          <div class="half">
-            <article class="project reveal" id="solar">
+          <article class="project reveal" id="solar">
+            <div class="project-grid">
               <div>
                 <div class="pill-row">
                   <span class="pill pill-butter">PM-KUSUM</span>
                   <span class="pill">Secure Meters Ltd.</span>
                 </div>
-                <h3>Solar monitoring</h3>
-                <p>I added single-site and multi-site dashboards, generation versus earnings, alerts, and role-based routing on a shared login, for EPC customers.</p>
+                <h3>PM-KUSUM solar monitoring</h3>
+                <p>Solar monitoring app for 30+ EPC customers on the shared eWatch login: role-based routing, single- and multi-site dashboards, generation vs earnings charts, alerts and daily consumption reports.</p>
+                <ul class="chips">
+                  <li class="hot">Flutter</li>
+                  <li>BLoC</li>
+                  <li>REST</li>
+                  <li>role-based routing</li>
+                </ul>
               </div>
-              <ul class="chips">
-                <li class="hot">Flutter</li>
-                <li>Dart</li>
-              </ul>
-            </article>
-            <article class="project reveal" id="ghar-ki-khoj">
+              <!-- TODO: replace this frame with a PM-KUSUM screenshot. The energy image is the eWatch dashboard, not this app. -->
+              <div class="device-frame" role="img" aria-label="Phone frame reserved for a PM-KUSUM solar monitoring screenshot.">
+                <p>Screenshot not added yet</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal" id="quickmed">
+            <div class="project-grid">
               <div>
                 <div class="pill-row">
-                  <span class="pill pill-blush">Rental search</span>
+                  <span class="badge-progress">In progress</span>
                 </div>
-                <h3>Ghar-Ki-Khoj</h3>
-                <p>I built a MEAN-stack app for searching rental properties.</p>
+                <h3>QuickMed</h3>
+                <p>Medicine delivery app, built as a personal project: Flutter client, with a NestJS and PostgreSQL backend planned for orders, inventory and prescription review.</p>
+                <ul class="chips">
+                  <li class="hot">Flutter</li>
+                  <li>Supabase</li>
+                  <li>NestJS (planned)</li>
+                </ul>
+                <div class="prior-links">
+                  <a href="https://github.com/PranjalG/quick_med_mobile_app" rel="noopener noreferrer">GitHub</a>
+                </div>
               </div>
-              <ul class="chips">
-                <li class="hot">MEAN</li>
-              </ul>
-            </article>
-          </div>
+              <div class="frame frame-wide">
+                <img src="images/display/healthcare.jpg" alt="QuickMed screens for the splash, login, and sign up." width="900" height="595" />
+              </div>
+            </div>
+          </article>
 
-          <div class="prior reveal">
+          <article class="prior reveal" id="earlier">
             <div>
-              <p class="prior-label">Earlier projects</p>
-              <h3>More builds, same person.</h3>
+              <p class="prior-label">Earlier work</p>
             </div>
-            <div class="prior-links">
-              <a href="https://pranjalg.github.io/Box-office/#/" rel="noopener noreferrer">Box Office</a>
-              <a href="https://tictac-game-blue-beam.surge.sh/" rel="noopener noreferrer">Tic Tac Toe</a>
-              <a href="https://pranjalg.github.io/Drum-kit/" rel="noopener noreferrer">Drum Kit</a>
-              <a href="https://pranjalg.github.io/TindDog-website/" rel="noopener noreferrer">TinDog</a>
-              <a href="https://github.com/PranjalG/flutter_articles_app" rel="noopener noreferrer">Articles</a>
-              <a href="https://github.com/PranjalG/quick_med_mobile_app" rel="noopener noreferrer">QuickMed</a>
-              <a href="https://github.com/PranjalG/money_finance_tracking_app" rel="noopener noreferrer">Expenses</a>
-            </div>
-          </div>
+            <ul class="earlier-list">
+              <li><a href="https://github.com/PranjalG/Ghar-Ki-Khoj" rel="noopener noreferrer">Ghar-Ki-Khoj</a> — MEAN rental search with JWT auth, about 11 REST endpoints.</li>
+              <li><a href="https://github.com/PranjalG/money_finance_tracking_app" rel="noopener noreferrer">Expense tracker</a></li>
+            </ul>
+          </article>
         </div>
       </section>
 
