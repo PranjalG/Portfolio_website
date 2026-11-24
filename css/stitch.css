@@ -398,12 +398,6 @@ body {
   line-height: 1.08;
 }
 
-.wavy {
-  text-decoration: underline wavy var(--rose);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.35rem;
-}
-
 .hero-lead {
   max-width: 40rem;
   margin: 1.25rem 0 0;
