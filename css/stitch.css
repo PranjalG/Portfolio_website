@@ -490,6 +490,13 @@ body {
   line-height: 1.45;
 }
 
+.stats-note {
+  margin: 0.75rem 0 0;
+  color: rgba(46, 40, 39, 0.7);
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
 .section-head {
   display: flex;
   flex-direction: column;
