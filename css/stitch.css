@@ -380,6 +380,19 @@ body {
   color: var(--ink);
 }
 
+.badge-progress {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--butter);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
 .hero-kicker {
   margin: 0.8rem 0 0;
   color: var(--sage);
