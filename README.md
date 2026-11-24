@@ -1,6 +1,6 @@
 # Gaur. Pranjal Gaur.
 
-Senior software engineer. Flutter when the work is in the field. Applied AI when the answer has to show its sources. Open to remote.
+Senior Flutter engineer. Energy-monitoring apps, NestJS backends, and GyanAI, a RAG project that cites its sources. Open to remote.
 
 The site is the briefing. This repository is the file.
 
@@ -10,11 +10,11 @@ The site is the briefing. This repository is the file.
 
 Pranjal Gaur (she/her) writes software that has to behave when someone is standing in front of a meter, not a slide.
 
-At Secure Meters Ltd. she builds **my eWatch online**, an enterprise energy-monitoring app. The commissioning flow follows what the device actually says. Reports come down as PDFs: daily, monthly, shift-wise, and by metering location. She led the Flutter move from 3.27 to 3.44 and kept the existing app on the same codebase. A BLoC and Clean Architecture refactor cut the crash rate by 35%. She mentors two junior engineers.
+At Secure Meters Ltd. she builds **my eWatch online**, an energy-monitoring app. The commissioning flow follows what the device actually says. Reports come down as PDFs: daily, monthly, shift-wise, and by metering location. She led the Flutter move from 3.27 to 3.44 and kept the existing app on the same codebase. A BLoC and Clean Architecture refactor cut the crash rate by 35%. She mentors two junior engineers.
 
 Under PM-KUSUM she shipped solar monitoring for EPC customers. One site or many. Generation against earnings. Alerts. Role-based routing on a shared login.
 
-On her own time she built **GyanAI**, a citation-backed knowledge platform on Gemini embeddings and Supabase pgvector, and took silver at the Agentic Premier League, solo. Before that, **Ghar-Ki-Khoj**, a MEAN-stack search for rental homes.
+She also writes NestJS backends. On her own time she built **GyanAI**, a RAG project on Gemini embeddings and Supabase pgvector, and took silver at the Agentic Premier League, solo. The next version is marked in progress on the page. Before that, **Ghar-Ki-Khoj**, a MEAN-stack search for rental homes.
 
 The degree is electrical. B.E. in Electrical and Electronics, MBM University Jodhpur, 8.38 CGPA, with an AICTE Pragati Scholarship. The practice is software.
 
@@ -26,9 +26,9 @@ Butter, blush, and sage. A quiet WebGL wash behind the opening. A watercolor of 
 
 | Section | What it is for |
 | --- | --- |
-| Hero | The introduction: Flutter, applied AI, open to remote |
+| Hero | Senior Flutter engineer, energy monitoring, and RAG |
 | Figures | 8.38 CGPA, the Flutter upgrade, the crash-rate cut, two engineers mentored |
-| Work | eWatch commissioning, GyanAI, PM-KUSUM solar, Ghar-Ki-Khoj, and earlier builds |
+| Work | GyanAI v2, eWatch, PM-KUSUM solar, Ghar-Ki-Khoj, and earlier builds |
 | Stack | Only the tools the work actually used |
 | About | The person, with the photographs |
 | Contact | A direct line |
