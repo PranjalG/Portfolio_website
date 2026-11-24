@@ -27,7 +27,7 @@ Butter, blush, and sage. A quiet WebGL wash behind the opening. A watercolor of 
 | Section | What it is for |
 | --- | --- |
 | Hero | Senior Flutter engineer, energy monitoring, and RAG |
-| Figures | 8.38 CGPA, the Flutter upgrade, the crash-rate cut, two engineers mentored |
+| Figures | Secure Meters, 2024–2026: dashboard load, crash rate, EPC customers, metering locations |
 | Work | GyanAI v2, eWatch, PM-KUSUM solar, Ghar-Ki-Khoj, and earlier builds |
 | Stack | Only the tools the work actually used |
 | About | The person, with the photographs |
