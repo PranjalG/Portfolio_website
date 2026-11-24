@@ -29,7 +29,7 @@ Butter, blush, and sage. A quiet WebGL wash behind the opening. A watercolor of 
 | Hero | Senior Flutter engineer, energy monitoring, and RAG |
 | Figures | Secure Meters, 2024–2026: dashboard load, crash rate, EPC customers, metering locations |
 | Work | GyanAI v2, eWatch, PM-KUSUM solar, Ghar-Ki-Khoj, and earlier builds |
-| Stack | Only the tools the work actually used |
+| Stack | Mobile, backend, applied AI, and delivery |
 | About | The person, with the photographs |
 | Contact | A direct line |
 
