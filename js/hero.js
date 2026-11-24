@@ -25,6 +25,11 @@ function splitLines() {
 }
 
 export function initHero() {
+  const doodle = document.querySelector("[data-doodle]");
+  if (doodle && !reduceMotion && doodle.dataset.motion) {
+    doodle.src = doodle.dataset.motion;
+  }
+
   const hero = document.querySelector(".hero");
   if (!hero) return;
   const curve = document.querySelector("[data-load-curve]");
