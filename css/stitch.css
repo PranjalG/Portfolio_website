@@ -711,6 +711,20 @@ body {
   object-position: center;
 }
 
+.frame-shot {
+  padding: 0;
+  border: 0;
+  background: #fff;
+}
+
+.frame-shot img {
+  border-radius: 0;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: #fff;
+}
+
 .duo {
   display: grid;
   grid-template-columns: 1fr 1fr;
