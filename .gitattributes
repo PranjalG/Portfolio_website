@@ -1,0 +1,2 @@
+# Keep stylesheets out of GitHub's language stats so the repo reads as HTML.
+*.css linguist-detectable=false
