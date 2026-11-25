@@ -717,6 +717,13 @@ body {
   background: #fff;
 }
 
+.frame-shot.frame-dark {
+  align-self: center;
+  overflow: hidden;
+  border-radius: 1.1rem;
+  background: #050b18;
+}
+
 .frame-shot img {
   border-radius: 0;
   height: auto;
